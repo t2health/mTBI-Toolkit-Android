@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items title="Clinical Tools and Resources" style="separated">
+	<item title="Assessments" id="assessments" />
+		<item title="DHI - Dizziness Handicap Inventory" parentId="assessments" id="qa_dhi" destUri="t2mtbi://assessment/qa_dhi" />
+		<item title="ESS - Epworth Sleepiness Scale" parentId="assessments" id="qa_ess" destUri="t2mtbi://assessment/qa_ess" />
+		<item title="GCS - Glasgow Coma Scale" parentId="assessments" id="qa_gcs" destUri="t2mtbi://assessment/qa_gcs" />
+		<item title="MAF - Multidimensional Assessment of Fatigue (MAF) Scale" parentId="assessments" id="qa_maf" destUri="t2mtbi://assessment/qa_maf" />
+		<item title="NSI - Neurobehavioral Symptom Inventory" parentId="assessments" id="qa_nsi" destUri="t2mtbi://assessment/qa_nsi" />
+		<item title="PHQ-9 - Patient Health Questionare" parentId="assessments" id="qa_phq9" destUri="t2mtbi://assessment/qa_phq9"/>
+		<item title="PCL-M - PTSD Checklist - Military Version" parentId="assessments" id="qa_pclm" destUri="t2mtbi://assessment/qa_pclm" />
+
+	<item title="Additional Information" id="add_info" />
+		<item title="Other Tools" parentId="add_info"><![CDATA[
+					<h2>Links to Other Tools (not reproduced in this guide)</h2>
+					<p<strong>Drug Use Questionnaire (DAST-20)</strong><br/>
+					<a href="http://www.ensuringsolutions.org/usr_doc/DAST.pdf">http://www.ensuringsolutions.org/usr_doc/DAST.pdf</a></p>
+					<p><strong>Fatigue Assessment Instrument (FAI)</strong><br/>
+	<a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6T8V-45WYX0N-
+	15N-1&_cdi=5096&_user=9086466&_pii=002239999390104N&_orig=search&_
+	coverDate=10%2F31%2F1993&_sk=999629992&view=c&wchp=dGLbVzb-zSkWA&md5=39e942
+	ba512bd4a9cd81656f714b3c06&ie=/sdarticle.pdf">http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6T8V-45WYX0N-
+	15N-1&_cdi=5096&_user=9086466&_pii=002239999390104N&_orig=search&_
+	coverDate=10%2F31%2F1993&_sk=999629992&view=c&wchp=dGLbVzb-zSkWA&md5=39e942
+	ba512bd4a9cd81656f714b3c06&ie=/sdarticle.pdf</a></p>
+					<p><strong>Fatigue Impact Scale (FIS)</strong><br/>
+	<a href="http://www.mapi-trust.org/services/questionnairelicensing/cataloguequestionnaires/123-fis">http://www.mapi-trust.org/services/questionnairelicensing/cataloguequestionnaires/123-fis</a></p>
+					<p><strong>Pittsburgh Sleep Quality Index (PSQI)</strong><br/>
+	<a href="http://www.sleep.pitt.edu/content.asp?id=1484&subid=2316">http://www.sleep.pitt.edu/content.asp?id=1484&subid=2316</a></p>
+
+					<h2>Links to Other Tools
+					(included on pages 71–83 of this guide)</h2>
+					<p><strong>Dizziness Handicap Inventory (DHI)</strong><br/>
+	<a href="http://web.missouri.edu/~proste/tool/vest/Dizziness-Handicap-Inventory.pdf">http://web.missouri.edu/~proste/tool/vest/Dizziness-Handicap-Inventory.pdf</a></p>
+					<p><strong>Epworth Sleepiness Scale (ESS)</strong><br/>
+					<a href="http://epworthsleepinessscale.com/1997-version-ess">http://epworthsleepinessscale.com/1997-version-ess</a></p>
+					<p><strong>Glasgow Coma Scale (GCS),/strong><br/>
+	<a href="http://www.traumaticbraininjury.com/content/symptoms/glasgowcomascale.html">http://www.traumaticbraininjury.com/content/symptoms/glasgowcomascale.html</a></p>
+					<p><strong>Multidimensional Assessment of Fatigue (MAF)</strong><br/>
+	<a href="http://www.son.washington.edu/research/maf">http://www.son.washington.edu/research/maf</a></p>
+					<p><strong>Neurobehavioral Symptom Inventory (NSI)</strong><br/>
+						<a href="http://centerforneurorehabservices.org/uploads/2454/NB.Sx.Inventory.online.pdf">http://centerforneurorehabservices.org/uploads/2454/NB.Sx.Inventory.online.pdf</a></p>
+					<p><strong>Patient Health Questionnaire (PHQ-9) – Depression Assessment</strong><br/>
+	<a href="http://www.phqscreeners.com">http://www.phqscreeners.com</a></p>
+					<p><strong>PTSD Checklist (PCL-M)</strong><br/>
+	<a href="http://www.ptsd.va.gov/professional/pages/assessments/ptsd-checklist.asp">http://www.ptsd.va.gov/professional/pages/assessments/ptsd-checklist.asp</a></p>
+			]]>
+		</item>
+
+		<item title="Additional Resources" parentId="add_info"><![CDATA[
+				<h2>TBI Information</h2>
+				<p><strong>Defense Centers of Excellence for
+	Psychological Health and Traumatic
+	Brain Injury (DCoE)</strong><br/>
+	<a href="http://www.dcoe.health.mil">http://www.dcoe.health.mil</a></p>
+				<p><strong>Defense and Veterans
+	Brain Injury Center (DVBIC)</strong><br/>
+	<a href="http://www.dvbic.org">http://www.dvbic.org</a></p>
+				<p><strong>Deployment Health Clinical
+	Center (DHCC)</strong></br/>
+	<a href="http://www.pdhealth.mil/TBI.asp">http://www.pdhealth.mil/TBI.asp</a></p>
+				<p><strong>The Center of Excellence
+	for Medical Multimedia</strong><br/>
+	<a href="http://www.traumaticbraininjuryatoz.org">http://www.traumaticbraininjuryatoz.org</a></p>
+				<p><strong>Brain Injury Association
+	of America,</strong><br/>
+	<a href="http://www.biausa.org">http://www.biausa.org</a></p>
+
+	<p><strong>Brainline (WETA)</strong><br/>
+	<a href="http://www.brainline.org">http://www.brainline.org</a></p>
+
+				<h2>Clinical Guidelines</h2>
+				<p>The following are available for
+	download at:<br/>
+	<a href="http://www.dcoe.health.mil/ForHealthPros/
+	TBIInformation.aspx">http://www.dcoe.health.mil/ForHealthPros/
+	TBIInformation.aspx</a></p>
+
+	<ul>
+	<li>VA/DoD CPG for Management of
+	Concussion/Mild TBI</li>
+	<li>Fact Sheet Summarizing VA/DoD Evidence
+	Based Clinical Practice Guideline for
+	Management of Concussion/Mild Traumatic
+	Brain Injury</li>
+	<li>DoD Updated mild TBI Clinical Guidance
+	(May 8, 2008)</li>
+	<li>DCoE & DVBIC Cognitive
+	Rehabilitation Consensus
+	Conference Report</li>
+	<li>Cognitive Rehabilitation Clinical Guidance
+	Fact Sheet</li>
+	<li>DoD ICD-9 CM Coding Guidance
+	For Traumatic Brain Injury Fact Sheet</li>
+	<li>Driving Following TBI – Clinical
+	Recommendations</li>
+	<li>Driving Following TBI – Summary</li>
+	</ul>
+
+
+
+			<h2>Patient Education</h2>
+				<p>The following are available for
+	download at:<br/>
+	<a href="http://www.dvbic.org">http://www.dvbic.org</a></p>
+				<ul>
+				<li>Headache Management</li>
+	<li>Dizziness</li>
+	<li>Healthy Sleep</li>
+	<li>Mood Changes</li>
+	<li>Improving Memory</li>
+	<li>Non-Acute Concussion/mild TBI</li>
+	<li>Acute Concussion/mild TBI</li>
+	</ul>
+
+				<h2>DVBIC Regional Care
+	Coordinator Program</h2>
+				<ul>
+				<li>The DVBIC Regional Care Coordinator (RCC)
+	Program is a network of professionals
+	(nurses, social workers, counselors)
+	specializing in TBI who provide regular
+	follow-up to service members and veterans
+	with TBI (all severities) in order to improve
+	service delivery, ensure service members
+	and veterans are connected with clinical
+	and non-clinical services along the recovery
+	continuum from injury to return to duty
+	and/or reintegration into the community.
+	Each DVBIC RCC is assigned to a specific
+	geographical region of the country and is
+	also tasked with maintaining knowledge of
+	the TBI treatment and support assets of the
+	region (military, veteran and civilian)</li>
+	<li>RCCs:
+		<ul>
+			<li>Serve as points of contact to assess TBI resources in communities where the individual resides</li>
+			<li>Facilitate access to those services</li>
+			<li>Collaborate with the DoD and VA casemanagement programs to evaluate the appropriateness and therapeutic value of individual short-term and long-term plans of care</li>
+		</ul>
+	</li>
+	<li>To locate the RCC in your area, please contact DVBIC at:
+		<ul>
+			<li>Commercial toll-free: 1-800-870-9244</li>
+			<li>DSN: 662-6345</li>
+			<li>Email: <a href="mailto:info@dvbic.org">info@dvbic.org</a></li>
+		</ul>
+	</li>
+	<ul>
+			]]>
+		</item>
+
+</items>

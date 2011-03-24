@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.t2.mtbi"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name"
+    	android:theme="@style/CustomTheme">
+        <activity android:name=".activity.StartupActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity
+			android:name=".activity.qa.ABSQuestionSetActivity">
+		</activity>
+
+		<activity
+			android:name=".activity.qa.ABSQuestionActivity">
+		</activity>
+
+		<activity
+			android:name=".activity.ActivityUriLoader">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:scheme="t2mtbi" android:host="workflow" />
+			</intent-filter>
+
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:scheme="t2mtbi" android:host="itemsbrowser" />
+			</intent-filter>
+
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:scheme="t2mtbi" android:host="assessment" />
+			</intent-filter>
+		</activity>
+
+		<activity
+        	android:name=".activity.qa.AverageQAManagerActivity">
+       	</activity>
+
+		<activity
+			android:name=".activity.CognitiveRehabActivity">
+		</activity>
+
+		<activity
+			android:name=".activity.CPGActivity">
+		</activity>
+
+		<activity
+			android:name=".activity.EducationActivity">
+		</activity>
+
+		<activity
+			android:name=".activity.ICD9Activity">
+		</activity>
+
+        <activity
+        	android:name=".activity.MainActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.MainMenuActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.MainPreferenceActivity">
+       	</activity>
+
+		<activity
+        	android:name=".activity.QAMAFManagerActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.QAMAFSliderQuestionActivity">
+       	</activity>
+
+		<activity
+        	android:name=".activity.QAPHQ9ManagerActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.SplashActivity"
+        	android:screenOrientation="portrait">
+       	</activity>
+
+		<activity
+        	android:name=".activity.qa.SumQAManagerActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.qa.SingleChoiceQuestionActivity">
+       	</activity>
+
+		<activity
+        	android:name=".activity.SymptomsBrowserActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.SymptomManagementActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.ToolsActivity">
+       	</activity>
+
+       	<activity
+			android:name=".activity.VCodesActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:scheme="t2mtbi" android:host="vcodes" />
+			</intent-filter>
+		</activity>
+
+		<activity
+        	android:name=".activity.WebViewActivity">
+       	</activity>
+
+		<activity
+        	android:name=".activity.XMLItemsBrowserActivity">
+       	</activity>
+
+       	<activity
+        	android:name=".activity.XMLWorkflowActivity"
+			android:screenOrientation="portrait">
+       	</activity>
+
+    </application>
+</manifest>

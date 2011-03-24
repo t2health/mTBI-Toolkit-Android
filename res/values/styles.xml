@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="TextAppearance" parent="@android:style/TextAppearance">
+		<item name="android:textColor">#FFFFFFFF</item>
+	</style>
+
+	<style name="TextAppearanceInverse" parent="@style/TextAppearance">
+		<item name="android:textColor">#FF000000</item>
+	</style>
+
+	<style name="TabWidget" parent="@android:style/Widget.TabWidget">
+		<item name="android:textAppearance">@style/TextAppearanceTabWidget</item>
+	</style>
+
+	<style name="TextAppearanceTabWidget" parent="@android:style/TextAppearance.Widget.TabWidget">
+		<item name="android:textColor">#FFFFFFFF</item>
+	</style>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mild TBI</string>
+    <string name="back">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unknown">Unknown</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderate</string>
+    <string name="severe">Severe</string>
+    <string name="penetrating">Penetrating</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="details">Details</string>
+    <string name="preferences_title">Preferences</string>
+	<string name="send_results">Send Results</string>
+	<string name="send_results_subject">Sending results for assessment: {0}</string>
+	<string name="about">About</string>
+
+    <!-- EULA -->
+	<string name="eula_title">License</string>
+	<string name="eula_accept">Accept</string>
+	<string name="eula_refuse">Refuse</string>
+
+	<string name="send_anon_data">Send Anonymous Usage Data</string>
+	<string name="send_anon_data_desc">Allow developers to determine how this App is being used.</string>
+
+
+	<string name="v_codes_title">V-Codes</string>
+    <string name="v_code">V-Code</string>
+
+    <string name="start_questionare">Start Survey</string>
+
+    <string name="vcode_global_war">Injury related to global war on terrorism?</string>
+    <string name="vcode_level_of_severity">Level of severity</string>
+
+    <string name="home_tab_title">Home</string>
+    <string name="guidelines_tab_title">CPG</string>
+    <string name="coding_tab_title">ICD-9</string>
+    <string name="symptoms_managment_tab_title">Symptoms</string>
+    <string name="cognitive_rehabilitation_tab_title">Cognitive Rehabilitation</string>
+    <string name="patient_education_tab_title">Education</string>
+    <string name="tools_tab_title">Tools</string>
+
+	<string name="home_title">TBI Basics</string>
+
+    <string name="total_score">Total Score:</string>
+
+    <string-array name="v_codes">
+    	<item>V15.52_0</item>
+    	<item>V15.52_1</item>
+    	<item>V15.52_2</item>
+    	<item>V15.52_3</item>
+    	<item>V15.52_4</item>
+    	<item>V15.52_5</item>
+    	<item>V15.52_6</item>
+    	<item>V15.52_7</item>
+    	<item>V15.52_8</item>
+    	<item>V15.52_9</item>
+    	<item>V15.52_A</item>
+    	<item>V15.52_B</item>
+    	<item>V15.52_C</item>
+    	<item>V15.52_D</item>
+    	<item>V15.52_E</item>
+    	<item>V15.52_F</item>
+    </string-array>
+
+	<string name="about_title">About the Mild TBI App</string>
+	<string name="about_content"><![CDATA[
+	This is the about text
+	]]></string>
+
+    <string name="confirm_question_exit_message">Choosing back will exit this assessment and all questions you answered will be lost. Are you sure you would like to do this?</string>
+
+    <string name="tbi_basics_content"><![CDATA[
+    	<style type="text/css">
+    		table {
+    			border-top: 1px solid black;
+    			border-left: 1px solid black;
+    			background: rgb(100,100,100);
+    		}
+    		table th, table td {
+    			text-align: left;
+    			border-right: 1px solid black;
+    			border-bottom: 1px solid black;
+    			padding: 5px;
+    			min-width: 100px;
+    		}
+    		table th {
+    			background-color: rgb(50,50,50);
+    		}
+    	</style>
+
+		<h3>DoD Definition (2007)</h3>
+		<p>A traumatically induced structural injury and/or physiological disruption of brain function as a result of an external force that is indicated by new onset or worsening of at least one of the following clinical signs immediately following the event:</p>
+		<ul>
+			<li>Any period of loss of or a decreased level of consciousness (LOC)</li>
+			<li>Any loss of memory for events immediately before or after the injury [post-traumatic amnesia (PTA)]</li>
+			<li>Any alteration in mental state at the time of the injury (confusion, disorientation, slowed thinking, etc.)</li>
+			<li>Neurological deficits (weakness, loss of balance, change in vision, praxis, paresis/plegia, sensory loss, aphasia, etc.) that may or may not be transient</li>
+			<li>Intracranial lesion</li>
+		</ul>
+
+		<p>External forces may include any of the following events:</p>
+		<ul>
+			<li>Head being struck by an object</li>
+			<li>Head striking an object </li>
+			<li>Brain undergoing an acceleration/deceleration movement without direct external trauma to the head</li>
+			<li>Foreign body penetrating the brain </li>
+			<li>Forces generated from events such as blast or explosion, or other force yet to be defined</li>
+		</ul>
+
+		<h3>Causes</h3>
+		<p>In the military the leading causes of TBI are:</p>
+		<ul>
+			<li>Blasts</li>
+			<li>Motor vehicle crashes</li>
+			<li>Fragments </li>
+			<li>Falls </li>
+			<li>Bullets</li>
+		</ul>
+
+		<h3>Severity Ratings for TBI</h3>
+		<table cellspacing="0">
+			<thead>
+				<tr>
+					<th>Criteria</th>
+					<th>Mild</th>
+					<th>Moderate</th>
+					<th>Severe</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Structural Imaging</th>
+					<td>Normal</td>
+					<td>Normal or Abnormal</td>
+					<td>Normal or Abnormal</td>
+				</tr>
+				<tr>
+					<th>Loss of Consciousness (LOC)</th>
+					<td>0–30 min</td>
+					<td>> 30 min and < 24 hrs </td>
+					<td>> 24 hrs</td>
+				</tr>
+				<tr>
+					<th>Alteration of Consciousness/ Mental State (AOC)</th>
+					<td>≤ 24 hrs</td>
+					<td>> 24 hrs</td>
+					<td>> 24 hrs</td>
+				</tr>
+				<tr>
+					<th>Post-traumatic Amnesia (PTA)</th>
+					<td>≤ 24 hrs</td>
+					<td>> 24 hrs and < seven days</td>
+					<td>> seven days</td>
+				</tr>
+				<tr>
+					<th>Glasgow Coma Scale (GCS) (best available score in first 24 hours)*</th>
+					<td>Score 13–15</td>
+					<td>Score 9–12</td>
+					<td>Score 3–8</td>
+				</tr>
+			<tbody>
+		</table>
+		<p>* GCS is not part of the official DoD definition for TBI but is commonly used in practice</p>
+    ]]></string>
+</resources>

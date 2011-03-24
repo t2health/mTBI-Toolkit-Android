@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:gravity="center"
+		android:text="@string/vcode_global_war" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginBottom="20dip">
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/yesButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:text="@string/yes" />
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/noButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:text="@string/no" />
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/unknownButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/unknown" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:gravity="center"
+		android:text="@string/vcode_level_of_severity" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/severityMildButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:text="@string/mild" />
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/severityModerateButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:text="@string/moderate" />
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/severitySevereButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/severe" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/severityPenetratingButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:text="@string/penetrating" />
+		<view
+			class="com.t2.mtbi.view.ToggledButton"
+			android:id="@+id/severityUnknownButton"
+			android:layout_width="100dip"
+			android:layout_height="wrap_content"
+			android:text="@string/unknown" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="5dip"
+			android:text="@string/v_code" />
+		<EditText
+			android:id="@+id/vcodeResult"
+			android:layout_width="150dip"
+			android:layout_height="wrap_content"
+			android:editable="false"
+			android:focusable="false"
+			android:gravity="center" />
+	</LinearLayout>
+
+</LinearLayout>

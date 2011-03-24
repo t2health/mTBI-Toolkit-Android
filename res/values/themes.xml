@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="CustomTheme" parent="@android:style/Theme.Black">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/star_bg</item>
+
+		<item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearanceInverse</item>
+
+        <item name="android:textColorPrimary">#FFFFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFFFF</item>
+
+        <item name="android:tabWidgetStyle">@style/TabWidget</item>
+	</style>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/white_rounded_box">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/text1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"
+				android:textAppearance="@android:style/TextAppearance.Medium"
+				android:textColor="#FF000000"
+				android:textStyle="bold"
+				android:inputType="textMultiLine"
+				android:padding="5dip"
+				android:text="Title" />
+
+			<Button
+				android:id="@+id/detailsButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:visibility="gone"
+				android:text="Details" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/webviewWrapper"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<WebView
+				android:id="@+id/text2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<!-- <TextView
+			android:id="@+id/text2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="@android:style/TextAppearance.Small"
+			android:textColor="#FF000000"
+			android:gravity="center"
+			android:text="Content"  />
+			 -->
+
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dip"
+			android:stretchColumns="*">
+			<TableRow>
+				<Button
+					android:id="@+id/positiveButton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="invisible"
+					android:text="Yes" />
+
+				<Button
+					android:id="@+id/neutralButton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="invisible"
+					android:text="Next" />
+
+				<Button
+					android:id="@+id/negativeButton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="invisible"
+					android:text="No" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+	<TableLayout
+		android:id="@+id/previousButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*">
+		<TableRow>
+			<ImageView
+				android:id="@+id/positiveArrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/white_down_arrow"
+				android:visibility="visible" />
+			<ImageView
+				android:id="@+id/neutralArrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/white_down_arrow"
+				android:visibility="visible" />
+			<ImageView
+				android:id="@+id/negativeArrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/white_down_arrow"
+				android:visibility="visible" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

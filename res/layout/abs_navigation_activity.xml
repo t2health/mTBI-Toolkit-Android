@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="48dip"
+		android:gravity="center_vertical"
+		android:background="@drawable/title_bg"
+		android:padding="3dip">
+
+		<Button
+			android:id="@+id/navigationBackButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/back" />
+
+		<TextView
+			android:id="@+id/navigationTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			style="@android:style/TextAppearance.Medium"
+			android:maxLines="2"
+			android:ellipsize="end" />
+
+		<ImageButton
+			android:id="@+id/navigationInfoButton"
+			android:layout_width="42dip"
+			android:layout_height="42dip"
+			android:src="@android:drawable/ic_menu_info_details"
+			android:scaleType="fitCenter" />
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/navigationContent"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0">
+	</FrameLayout>
+
+</LinearLayout>

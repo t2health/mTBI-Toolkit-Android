@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dip">
+
+	<TextView
+		android:id="@+id/text1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Medium"
+		android:paddingTop="10dip" />
+
+	<CheckBox
+		android:id="@+id/dontCountAnswer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dip" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dip"
+		android:layout_weight="1.0"
+		android:gravity="center">
+
+		<LinearLayout
+			android:id="@+id/sliderWrapper"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<TextView
+				android:id="@+id/text2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+
+			<EditText
+				android:id="@+id/valueSelectedEditText"
+				android:layout_width="50dip"
+				android:layout_height="wrap_content"
+				android:editable="false"
+				android:focusable="false"
+				android:gravity="center" />
+			<SeekBar
+				android:id="@+id/seekBar"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+			<LinearLayout
+				android:id="@+id/answerValueLabels"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/answerLabels"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/nextButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/next" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items title="Cognitive Rehabilitation for Mild TBI Consensus Conference (2009): Summary of Clinical Recommendations">
+
+	<item title="Summary of Clinical Recommendations" >
+		<![CDATA[
+		<ul>
+			<li><strong>Goal: To provide guidance regarding cognitive rehabilitation of chronic post-concussive symptoms in service members and veterans receiving treatment within military medical settings</strong></li>
+			<li>This guidance addresses the needs of the service member or veteran who is three months or more post-concussive injury and has persistent cognitive symptoms</li>
+			<li>The recommendations contained in the document are divided into four areas: assessment (initial and comprehensive), interventions, outcome measures and program implementation</li>
+			<li>The term cognitive rehabilitation is used synonymously with neurorehabilitation, neuropsychological rehabilitation, cognitive remediation and cognitive retraining</li>
+		</ul>
+
+		<h3>Program Implementation</h3>
+		<ul>
+			<li>Ideal cognitive rehabilitation team: holistic, interdisciplinary team, including a designated team leader competent in brain injury rehabilitation and military culture and capable of developing a therapeutic alliance with patients</li>
+			<li>Core elements of a successful program:
+				<ul>
+					<li>Assessment prior to treatment</li>
+					<li>Identification of individualized cognitive rehabilitation goals that target symptom reduction through restoration and compensation, functional improvements/gains, and a therapeutic alliance</li>
+					<li>Development of an interdisciplinary individualized treatment plan</li>
+					<li>Periodic cognitive reassessment and review of goals</li>
+					<li>Development of a well-defined discharge plan</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h3>Outcome Measures</h3>
+		<ul>
+			<li>Cognitive rehabilitation programs must describe outcomes in order to advance the published science</li>
+			<li>Recommended outcome measures are outlined in the 2009 Consensus Conference on Cognitive Rehabilitation for Mild TBI report and include administrative performance metrics, pre- and post-assessment differences, pre- and post-functional differences, moderating variables, discharge criteria, consumer satisfaction and aggregate program outcome data</li>
+		</ul>
+		]]>
+	</item>
+
+	<item id="process" title="Rehabilitation Process" destUri="t2mtbi://workflow/cognitive_rehab_workflow" />
+</items>

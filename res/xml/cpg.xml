@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items title="VA/DoD CPG" style="separated">
+	<item title="Summary" id="summary" />
+		<item title="Summary of Department of Veterans Affairs/Department of Defense (VA/DoD) Clinical Practice Guideline (CPG) for the Management of Concussion/Mild TBI" parentId="summary">
+			<![CDATA[
+				<h2>Scope</h2>
+				<p>This guideline is relevant to all healthcare professionals providing or directing treatment services to patients with mild TBI in any VA or DoD healthcare setting, including both primary and specialty care.</p>
+
+				The guideline DOES apply to the following:<br/>
+				<ol>
+					<li>Adult patients (18 years or older)</li>
+					<li>Diagnosed with mild TBI</li>
+					<li>Complaining of symptoms related to the injury</li>
+					<li>Treated in a VA or DoD clinical setting for these symptoms at least seven days after the initial head injury</li>
+				</ol>
+
+				The guideline DOES NOT address the following:<br/>
+				<ol>
+					<li>Management of mild TBI in the acute phase (< seven days post injury)</li>
+					<li>Management of moderate or severe TBI</li>
+					<li>Mild TBI presented as polytrauma and managed in an inpatient setting</li>
+					<li>Mild TBI in children</li>
+				</ol>
+
+				There are three algorithms contained in the CPG:
+				<ol style="list-style: lower-alpha">
+					<li><button onclick="document.location.href='t2mtbi://workflow/algorithm_a'; return false;">Initial Presentation</button></li>
+					<li><button onclick="document.location.href='t2mtbi://workflow/algorithm_b'; return false;">Management of Symptoms</button></li>
+					<li><button onclick="document.location.href='t2mtbi://workflow/algorithm_c'; return false;">Follow-up of Persistent Symptoms</button></li>
+				</ol>
+
+				<p>The information within each algorithm,
+				summarized in the following pages, helps identify the best
+				interventions and timing of services for patients in order to optimize
+				quality of care and clinical outcomes. The full CPG can be accessed
+				at <a href="http://www.healthquality.va.gov/mtbi/concussion_mtbi_full_1_0.pdf">http://www.healthquality.va.gov/mtbi/concussion_mtbi_full_1_0.pdf</a>.</p>
+			]]>
+		</item>
+
+	<item title="Summary of Algorithms" id="algorithms" />
+		<item title="Algorithm A: Initial Presentation" destUri="t2mtbi://workflow/algorithm_a" parentId="algorithms" />
+		<item title="Algorithm B: Management of Symptoms"  destUri="t2mtbi://workflow/algorithm_b" parentId="algorithms" />
+		<item title="Algorithm C: Follow-up of Persistent Symptoms" destUri="t2mtbi://workflow/algorithm_c" parentId="algorithms" />
+
+	<item title="Guidance" id="guidance" />
+		<item title="Return to Duty Guidance" parentId="guidance"><![CDATA[
+		<h3>When to Return to Duty/Activity</h3>
+		<ul>
+			<li>Provide period of rest for individuals with post-injury symptoms</li>
+			<li>Encourage gradual return to normal activity as clinically appropriate</li>
+			<li>Suggest exertional testing if a person’s normal activity involves significant physical activity</li>
+			<li>If exertional testing results in a return of symptoms, recommend additional rest until symptoms resolve</li>
+		</ul>
+
+		<h3>When to Apply duty restrictions</h3>
+		<ul>
+			<li>A duty specific task cannot be safely or competently completed based on symptoms</li>
+			<li>The work/duty environment cannot be adapted to the patient’s symptom-based limitation</li>
+			<li>The deficits cannot be accommodated <li>Symptoms reoccur</li>
+		</ul>
+		]]></item>
+
+		<item title="Referral Guidance" parentId="guidance"><![CDATA[
+		<h3>When to Refer to Specialists</h3>
+		<ul>
+			<li>Symptoms cannot be linked to an event (suspicion of another diagnosis)</li>
+			<li>An atypical symptom pattern or course is present </li>
+			<li>Findings indicate an acute neurological condition requiring urgent intervention</li>
+			<li>Presence of other major comorbid conditions requiring special evaluation</li>
+		</ul>
+		]]></item>
+</items>
