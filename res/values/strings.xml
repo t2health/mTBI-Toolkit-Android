@@ -67,14 +67,8 @@
 
 	<string name="about_title">About the Mild TBI App</string>
 	<string name="about_content"><![CDATA[
-The Mild Traumatic Brain Injury (mTBI) Pocket Guide mobile application
-was developed by the National Center for Telehealth and Technology (T2) in
-coordination with the Defense Centers of Excellence (DCoE) TBI Clinical Standards
-of Care and Educational Affairs Office for Defense and Veterans Brain Injury
-Center (DVBIC). The purpose of this application is to give providers an all-
-encompassing, quick reference that includes DoD established best clinical
-practice guidelines for the diagnosis, assessment and treatment of Service
-Members and Veterans who have sustained a mTBI.
+		<p>The Mild Traumatic Brain Injury (mTBI) Pocket Guide mobile application was developed by the National Center for Telehealth and Technology (T2) in coordination with the Defense Centers of Excellence (DCoE) TBI Clinical Standards of Care and Educational Affairs Office for Defense and Veterans Brain Injury Center (DVBIC). The purpose of this application is to give providers an all-encompassing, quick reference that includes DoD established best clinical practice guidelines for the diagnosis, assessment and treatment of Service Members and Veterans who have sustained a mTBI.</p>
+		<img src="file:///android_asset/img/splash_icons.png" style="width:100%" />
 	]]></string>
 
     <string name="confirm_question_exit_message">Choosing back will exit this assessment and all questions you answered will be lost. Are you sure you would like to do this?</string>
