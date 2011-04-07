@@ -14,7 +14,6 @@ import com.t2.mtbi.activity.qa.XMLQAManager.Answer;
 import com.t2.mtbi.activity.qa.XMLQAManager.Question;
 
 public abstract class XMLQAQuestion extends ABSNavigationActivity {
-	private static final String TAG = XMLQAQuestion.class.getSimpleName();
 	public static final String EXTRA_QUESTION = "questionObject";
 	public static final String EXTRA_ANSWERS = "answersList";
 	public static final String EXTRA_TOTAL_QUESIONS = "questionsCount";

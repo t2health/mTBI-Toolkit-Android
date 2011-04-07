@@ -110,8 +110,6 @@ public abstract class XMLQAManager extends ABSNavigationActivity {
 			while(eventType != XmlPullParser.END_DOCUMENT) {
 				String prevTag = tagsStack.peek();
 				String tag = parser.getName();
-				int depth = parser.getDepth();
-				//Log.v(TAG, "newTag:"+ tag +" prevTag:"+prevTag);
 
 				if(eventType == XmlPullParser.START_TAG) {
 					tagsStack.push(tag);
@@ -337,28 +335,19 @@ public abstract class XMLQAManager extends ABSNavigationActivity {
 
 
 	public class QAAdapter extends BaseAdapter {
-		private Context context;
 		private int layoutResId;
-		//private LinkedHashMap<Question, Answer[]> items;
-		//private ArrayList<Question> questions;
 		private LayoutInflater layoutInflater;
 		private LinkedHashMap<String, Question> questions;
 		private LinkedHashMap<String, Answer[]> answers;
 		private ArrayList<Question> questionsList;
-		private ArrayList<Answer[]> answersList;
 
 		public QAAdapter(Context c, int layoutResId, LinkedHashMap<String,Question> questions, LinkedHashMap<String,Answer[]> answers) {
-			this.context = c;
 			this.layoutResId = layoutResId;
-			//this.items = items;
 			this.questions = questions;
 			this.answers = answers;
 			this.layoutInflater = (LayoutInflater)c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 			this.questionsList = new ArrayList<Question>(this.questions.values());
-			this.answersList = new ArrayList<Answer[]>(this.answers.values());
-			//this.questions = new ArrayList<Question>();
-			//this.questions.addAll(items.keySet());
 		}
 
 		@Override

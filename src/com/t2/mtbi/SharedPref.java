@@ -1,7 +1,6 @@
 package com.t2.mtbi;
 
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 
 public class SharedPref {
 	public static boolean getSendAnnonData(SharedPreferences sharedPref) {

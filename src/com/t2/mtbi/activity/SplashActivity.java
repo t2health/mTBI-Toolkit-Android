@@ -3,14 +3,14 @@ package com.t2.mtbi.activity;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.t2.mtbi.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.t2.mtbi.R;
 
 public class SplashActivity extends ABSActivity implements OnClickListener {
 	private Timer timer = new Timer();

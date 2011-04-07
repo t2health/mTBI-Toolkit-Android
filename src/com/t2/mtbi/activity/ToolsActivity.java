@@ -1,10 +1,8 @@
 package com.t2.mtbi.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.t2.mtbi.R;
-import com.t2.mtbi.activity.qa.SumQAManagerActivity;
 
 public class ToolsActivity extends XMLItemsBrowserActivity {
 	@Override

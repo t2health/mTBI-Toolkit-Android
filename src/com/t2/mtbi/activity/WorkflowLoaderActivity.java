@@ -5,10 +5,8 @@ import java.util.List;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 
 public class WorkflowLoaderActivity extends ABSActivity {
-	private static final String TAG = WorkflowLoaderActivity.class.getSimpleName();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

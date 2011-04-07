@@ -1,9 +1,7 @@
 package com.t2.mtbi.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import com.t2.mtbi.ActivityIntents;
 import com.t2.mtbi.R;
 
 public class CPGActivity extends XMLItemsBrowserActivity {

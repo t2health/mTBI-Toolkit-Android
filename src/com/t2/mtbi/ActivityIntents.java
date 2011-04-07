@@ -1,5 +1,8 @@
 package com.t2.mtbi;
 
+import android.content.Context;
+import android.content.Intent;
+
 import com.t2.mtbi.activity.CPGActivity;
 import com.t2.mtbi.activity.CognitiveRehabActivity;
 import com.t2.mtbi.activity.EducationActivity;
@@ -13,10 +16,6 @@ import com.t2.mtbi.activity.WebViewActivity;
 import com.t2.mtbi.activity.XMLItemsBrowserActivity;
 import com.t2.mtbi.activity.XMLWorkflowActivity;
 import com.t2.mtbi.activity.qa.SumQAManagerActivity;
-
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 
 public class ActivityIntents {
 	public static Intent getItemBrowserIntent(Context c, int xmlResId, String baseId) {

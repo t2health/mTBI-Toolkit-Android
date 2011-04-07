@@ -1,9 +1,9 @@
 package com.t2.mtbi.activity;
 
-import com.t2.mtbi.R;
-
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+
+import com.t2.mtbi.R;
 
 public class MainPreferenceActivity extends PreferenceActivity {
 

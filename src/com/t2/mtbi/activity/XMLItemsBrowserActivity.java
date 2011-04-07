@@ -16,7 +16,6 @@ import android.content.res.XmlResourceParser;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -45,7 +44,6 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 
 	protected static final String LIST_ITEM_TITLE = "title";
 	protected static final String LIST_ITEM_ID = "id";
-	private static final String TAG = XMLItemsBrowserActivity.class.getSimpleName();
 
 	private int xmlResource = -1;
 
@@ -141,16 +139,6 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 
 	protected int getItemLayoutResId() {
 		return android.R.layout.simple_list_item_1;
-	}
-
-	private ArrayList<Item> getBaseItems(LinkedHashMap<String,Item> items) {
-		ArrayList<Item> baseItems = new ArrayList<Item>();
-		for(Item item: items.values()) {
-			if(item.parentId == null || items.get(item.parentId) == null) {
-				baseItems.add(item);
-			}
-		}
-		return baseItems;
 	}
 
 	public boolean isXMLResourceSet() {
@@ -343,6 +331,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 	@Override
 	public final void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 		BaseAdapter adapter = (BaseAdapter)arg0.getAdapter();
+		@SuppressWarnings("unchecked")
 		HashMap<String,Object> itemMap = (HashMap<String, Object>) adapter.getItem(arg2);
 		String id = (String) itemMap.get(LIST_ITEM_ID);
 		onItemClick(itemsMap.get(id));
@@ -459,6 +448,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
+			@SuppressWarnings("unchecked")
 			HashMap<String,Object> item = (HashMap<String, Object>) this.getItem(position);
 
 			if(isSeperator(item)) {
@@ -469,11 +459,6 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 			}
 
 			return super.getView(position, null, parent);
-		}
-
-		private boolean isSeperator(int pos) {
-			HashMap<String,Object> item = (HashMap<String, Object>) this.getItem(pos);
-			return isSeperator(item);
 		}
 
 		private boolean isSeperator(HashMap<String,Object> item) {
@@ -501,6 +486,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 			return false;
 		}
 
+		@SuppressWarnings("unchecked")
 		@Override
 		public boolean isEnabled(int position) {
 			return isEnabled((HashMap<String, Object>) this.getItem(position));

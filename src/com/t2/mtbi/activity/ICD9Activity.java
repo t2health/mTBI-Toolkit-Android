@@ -1,9 +1,5 @@
 package com.t2.mtbi.activity;
 
-import java.util.List;
-
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import com.t2.mtbi.R;

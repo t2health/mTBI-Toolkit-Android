@@ -20,7 +20,6 @@ import com.t2.mtbi.activity.qa.XMLQAManager.Answer;
 import com.t2.mtbi.activity.qa.XMLQAQuestion;
 
 public class QAMAFSliderQuestionActivity extends XMLQAQuestion implements OnTouchListener, OnClickListener, OnCheckedChangeListener, OnSeekBarChangeListener {
-	private static final String TAG = QAMAFSliderQuestionActivity.class.getSimpleName();
 	private View nextButton;
 	private Answer dontCountAnswer;
 	private Answer selectedAnswer;

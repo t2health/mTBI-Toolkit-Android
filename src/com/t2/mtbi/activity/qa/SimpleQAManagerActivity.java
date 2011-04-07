@@ -1,9 +1,7 @@
 package com.t2.mtbi.activity.qa;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,8 +10,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.text.Html;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -27,10 +23,8 @@ import com.t2.mtbi.activity.WebViewActivity;
 
 public abstract class SimpleQAManagerActivity extends XMLQAManager implements OnClickListener {
 	public static final String EXTRA_SHOW_TOTAL_SCORE = "showTotalScore";
-	private static final String TAG = SimpleQAManagerActivity.class.getSimpleName();
 	private boolean showTotalScore = true;
 	private ListView listView;
-	private TextView totalScore;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

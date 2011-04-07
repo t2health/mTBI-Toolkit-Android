@@ -7,25 +7,17 @@ import android.widget.Button;
 public class ToggledButton extends Button {
 
 	private boolean isChecked = false;
-	private int[] initialState;
 
 	public ToggledButton(Context context) {
 		super(context);
-		this.init();
 	}
 
 	public ToggledButton(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		this.init();
 	}
 
 	public ToggledButton(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		this.init();
-	}
-
-	private void init() {
-		initialState = super.getDrawableState();
 	}
 
 	public void setChecked(boolean isChecked) {
@@ -44,11 +36,6 @@ public class ToggledButton extends Button {
 		if(this.isChecked()) {
 			states = Button.PRESSED_WINDOW_FOCUSED_STATE_SET;
 		} else {
-			/*if(super.hasFocus()) {
-				states = super.onCreateDrawableState(extraSpace);
-			} else {
-				states = initialState;
-			}*/
 			states = super.onCreateDrawableState(extraSpace);
 		}
 

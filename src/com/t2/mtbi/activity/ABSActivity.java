@@ -2,7 +2,6 @@ package com.t2.mtbi.activity;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;

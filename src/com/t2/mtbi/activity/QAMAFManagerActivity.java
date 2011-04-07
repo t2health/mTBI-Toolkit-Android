@@ -5,7 +5,6 @@ import android.content.Intent;
 import com.t2.mtbi.activity.qa.SumQAManagerActivity;
 
 public class QAMAFManagerActivity extends SumQAManagerActivity {
-	private static final String TAG = QAMAFManagerActivity.class.getSimpleName();
 
 	@Override
 	protected Question getNextQuestion(Question previousQuestion) {

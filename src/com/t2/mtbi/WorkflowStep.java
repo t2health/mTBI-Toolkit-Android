@@ -16,6 +16,7 @@ public class WorkflowStep implements Parcelable {
 	public boolean positiveButtonActive = false;
 	public boolean neutralButtonActive = false;
 
+	@SuppressWarnings("unused")
 	private static final Parcelable.Creator<WorkflowStep> CREATOR
 		= new Parcelable.Creator<WorkflowStep>() {
 			@Override
