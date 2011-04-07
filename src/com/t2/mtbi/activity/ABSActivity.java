@@ -33,10 +33,12 @@ public class ABSActivity extends Activity {
 	        		Constant.REMOTE_STACK_TRACE_URL.length() > 0) {
 	        	ExceptionHandler.register(this, Constant.REMOTE_STACK_TRACE_URL);
 	        }
+	        
+	        Analytics.init(Constant.FLURRY_KEY, SharedPref.getSendAnnonData(sharedPref));
+	        Analytics.setDebugEnabled(true);
+	        Analytics.onPageView();
+	        Analytics.onEvent(this.getClass().getSimpleName());
         }
-
-		Analytics.setEnabled(SharedPref.getSendAnnonData(sharedPref));
-		Analytics.onPageView();
 	}
 
 	@Override
