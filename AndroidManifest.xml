@@ -20,14 +20,6 @@
         </activity>
 
 		<activity
-			android:name=".activity.qa.ABSQuestionSetActivity">
-		</activity>
-
-		<activity
-			android:name=".activity.qa.ABSQuestionActivity">
-		</activity>
-
-		<activity
 			android:name=".activity.ActivityUriLoader">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW"></action>
@@ -76,10 +68,6 @@
        	</activity>
 
        	<activity
-        	android:name=".activity.MainMenuActivity">
-       	</activity>
-
-       	<activity
         	android:name=".activity.MainPreferenceActivity">
        	</activity>
 
@@ -106,10 +94,6 @@
 
        	<activity
         	android:name=".activity.qa.SingleChoiceQuestionActivity">
-       	</activity>
-
-		<activity
-        	android:name=".activity.SymptomsBrowserActivity">
        	</activity>
 
        	<activity
