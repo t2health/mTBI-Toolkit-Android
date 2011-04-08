@@ -226,7 +226,7 @@ public abstract class XMLQAManager extends ABSNavigationActivity {
 		return -1;
 	}
 
-	public class Questionare {
+	public static class Questionare {
 		public String title;
 		public String desc;
 		public String content;
@@ -334,7 +334,7 @@ public abstract class XMLQAManager extends ABSNavigationActivity {
 	}
 
 
-	public class QAAdapter extends BaseAdapter {
+	public static class QAAdapter extends BaseAdapter {
 		private int layoutResId;
 		private LayoutInflater layoutInflater;
 		private LinkedHashMap<String, Question> questions;

@@ -358,7 +358,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 		}
 	}
 
-	public class Item {
+	public static class Item {
 		public String id;
 		public String title;
 		public String content;
@@ -411,7 +411,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 		}
 	}
 
-	private class SimpleSeperatorAdapter extends SimpleAdapter {
+	private static class SimpleSeperatorAdapter extends SimpleAdapter {
 		public static final String IS_SEPERATOR_ITEM_KEY = "isHeaderItem";
 		public static final String IS_ENABLED_ITEM_KEY = "isEnabled";
 		private ArrayList<HashMap<String,Object>> seperators = new ArrayList<HashMap<String,Object>>();

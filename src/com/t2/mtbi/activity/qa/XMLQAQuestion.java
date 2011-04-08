@@ -53,7 +53,7 @@ public abstract class XMLQAQuestion extends ABSNavigationActivity {
 		this.finish();
 	}
 
-	public class AnswerAdapter extends ArrayAdapter<Answer> {
+	public static class AnswerAdapter extends ArrayAdapter<Answer> {
 		public AnswerAdapter(Context context, int textViewResourceId,
 				Answer[] objects) {
 			super(context, textViewResourceId, objects);

@@ -1,0 +1,321 @@
+Found a 15 line (83 tokens) duplication in the following files: 
+Starting at line 66 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+Starting at line 83 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+
+	private static Intent getAssessmentIntent(Context c, Uri data) {
+		List<String> path = data.getPathSegments();
+		String xmlResourceStr = null;
+		if(path == null || path.size() <= 0) {
+			return null;
+		}
+
+		xmlResourceStr = path.get(0);
+
+		int xmlId = c.getResources().getIdentifier(xmlResourceStr, "xml", c.getPackageName());
+		if(xmlId == 0) {
+			return null;
+		}
+
+		return ActivityIntents.getAssessmentIntent(c, xmlId);
+=====================================================================
+Found a 10 line (60 tokens) duplication in the following files: 
+Starting at line 4 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/SumQAManagerActivity.java
+Starting at line 4 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/AverageQAManagerActivity.java
+
+public class AverageQAManagerActivity extends SimpleQAManagerActivity {
+	@Override
+	protected double getTotalScore() {
+		int total = 0;
+		for(Answer[] ans: this.selectdAnswers.values()) {
+			for(int i = 0; i < ans.length; ++i) {
+				total += ans[i].value;
+			}
+		}
+		return (int)(total / this.selectdAnswers.size());
+=====================================================================
+Found a 14 line (56 tokens) duplication in the following files: 
+Starting at line 263 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+Starting at line 319 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+
+			this.value = in.readInt();
+		}
+
+		@Override
+		public int describeContents() {
+			return 0;
+		}
+
+		@Override
+		public void writeToParcel(Parcel dest, int flags) {
+			dest.writeString(this.id);
+			dest.writeString(this.title);
+			dest.writeString(this.desc);
+			dest.writeInt(this.value);
+=====================================================================
+Found a 12 line (47 tokens) duplication in the following files: 
+Starting at line 264 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+Starting at line 54 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/WorkflowStep.java
+
+	}
+
+	@Override
+	public int describeContents() {
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeString(this.id);
+		dest.writeString(this.title);
+		dest.writeString(this.negativeId);
+=====================================================================
+Found a 7 line (45 tokens) duplication in the following files: 
+Starting at line 50 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+Starting at line 133 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+
+	public long getItemId(int position) {
+		for(Object section : this.sections.keySet()) {
+			Adapter adapter = sections.get(section);
+			int size = adapter.getCount() + 1;
+
+			// check if position inside this section
+			if(position == 0) return -1;
+=====================================================================
+Found a 7 line (41 tokens) duplication in the following files: 
+Starting at line 36 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+Starting at line 50 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+
+	public Object getItem(int position) {
+		for(Object section : this.sections.keySet()) {
+			Adapter adapter = sections.get(section);
+			int size = adapter.getCount() + 1;
+
+			// check if position inside this section
+			if(position == 0) return section;
+=====================================================================
+Found a 5 line (40 tokens) duplication in the following files: 
+Starting at line 141 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+Starting at line 179 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+		try {
+			XmlResourceParser parser = this.getResources().getXml(xmlResourceId);
+			int eventType = parser.getEventType();
+			while(eventType != XmlPullParser.END_DOCUMENT) {
+				String tag = parser.getName();
+=====================================================================
+Found a 6 line (40 tokens) duplication in the following files: 
+Starting at line 51 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+Starting at line 83 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+Starting at line 117 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+
+		for(Object section : this.sections.keySet()) {
+			Adapter adapter = sections.get(section);
+			int size = adapter.getCount() + 1;
+
+			// check if position inside this section
+			if(position == 0) return headers.getView(sectionnum, convertView, parent);
+=====================================================================
+Found a 14 line (39 tokens) duplication in the following files: 
+Starting at line 10 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ToolsActivity.java
+Starting at line 11 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/SymptomManagementActivity.java
+Starting at line 12 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ICD9Activity.java
+Starting at line 10 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/EducationActivity.java
+Starting at line 12 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/CognitiveRehabActivity.java
+Starting at line 10 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/CPGActivity.java
+
+		this.setXMLResource(R.xml.cpg);
+		super.onCreate(savedInstanceState);
+	}
+
+	@Override
+	protected int getHeaderLayoutResId() {
+		return R.layout.list_item_1_separator;
+	}
+
+	@Override
+	protected int getItemLayoutResId() {
+		return R.layout.list_item_1_indent;
+	}
+}
+=====================================================================
+Found a 5 line (38 tokens) duplication in the following files: 
+Starting at line 211 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+Starting at line 222 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+
+		this.currentSteps.add(newStep);
+		this.contentArea.addView(
+				adapter.getView(this.currentSteps.size()-1, null, null),
+				new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT)
+		);
+=====================================================================
+Found a 6 line (36 tokens) duplication in the following files: 
+Starting at line 37 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+Starting at line 83 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/view/SeparatedListAdapter.java
+
+		for(Object section : this.sections.keySet()) {
+			Adapter adapter = sections.get(section);
+			int size = adapter.getCount() + 1;
+
+			// check if position inside this section
+			if(position == 0) return TYPE_SECTION_HEADER;
+=====================================================================
+Found a 6 line (35 tokens) duplication in the following files: 
+Starting at line 303 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+Starting at line 313 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+
+			newView.findViewById(R.id.neutralButton).setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					WorkflowStep s = getItem(position);
+					s.negativeButtonActive = false;
+					s.positiveButtonActive = false;
+=====================================================================
+Found a 6 line (34 tokens) duplication in the following files: 
+Starting at line 58 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+Starting at line 75 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+
+		int xmlId = c.getResources().getIdentifier(xmlResourceStr, "xml", c.getPackageName());
+		if(xmlId == 0) {
+			return null;
+		}
+
+		return ActivityIntents.getWorkflowIntent(c, xmlId);
+=====================================================================
+Found a 6 line (34 tokens) duplication in the following files: 
+Starting at line 5 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/QAPHQ9ManagerActivity.java
+Starting at line 7 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/QAMAFManagerActivity.java
+
+public class QAMAFManagerActivity extends SumQAManagerActivity {
+
+	@Override
+	protected Question getNextQuestion(Question previousQuestion) {
+		Question nextQuestion = super.getNextQuestion(previousQuestion);
+		if(nextQuestion != null && nextQuestion.id.equals("2")) {
+=====================================================================
+Found a 5 line (34 tokens) duplication in the following files: 
+Starting at line 258 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+Starting at line 315 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+
+		private Answer(Parcel in) {
+			this.id = in.readString();
+			this.title = in.readString();
+			this.desc = in.readString();
+			this.value = in.readInt();
+=====================================================================
+Found a 5 line (33 tokens) duplication in the following files: 
+Starting at line 106 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+Starting at line 141 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+
+		try {
+			XmlResourceParser parser = this.getResources().getXml(xmlResourceId);
+			int eventType = parser.getEventType();
+			while(eventType != XmlPullParser.END_DOCUMENT) {
+				String tag = parser.getName();
+=====================================================================
+Found a 6 line (30 tokens) duplication in the following files: 
+Starting at line 86 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/Analytics.java
+Starting at line 96 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/Analytics.java
+
+	public static void onEvent(String event, Map<String,String> parameters) {
+		if(analyticsEnabled()) {
+			if(debugModeEnabled) {
+				Log.v(TAG, "onEvent:"+event);
+			}
+			FlurryAgent.onEvent(event, parameters);
+=====================================================================
+Found a 5 line (30 tokens) duplication in the following files: 
+Starting at line 293 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+Starting at line 303 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+
+			newView.findViewById(R.id.positiveButton).setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					WorkflowStep s = getItem(position);
+					s.negativeButtonActive = false;
+=====================================================================
+Found a 6 line (28 tokens) duplication in the following files: 
+Starting at line 48 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+Starting at line 68 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/ActivityUriLoader.java
+
+		String xmlResourceStr = null;
+		if(path == null || path.size() <= 0) {
+			return null;
+		}
+
+		xmlResourceStr = path.get(0);
+=====================================================================
+Found a 11 line (27 tokens) duplication in the following files: 
+Starting at line 279 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+Starting at line 312 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+				items,
+				this.itemResId,
+				this.itemFrom,
+				this.itemTo,
+				this.seperatorResId,
+				this.seperatorFrom,
+				this.seperatorTo
+		);
+	}
+
+	private ArrayList<HashMap<String,Object>> buildItemsHashList(ArrayList<Item> itemsIn) {
+=====================================================================
+Found a 2 line (26 tokens) duplication in the following files: 
+Starting at line 383 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+Starting at line 394 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+			for(Item item: items.values()) {
+				if(item.parentId != null && item.parentId.equals(this.id)) {
+=====================================================================
+Found a 9 line (25 tokens) duplication in the following files: 
+Starting at line 99 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/VCodesActivity.java
+Starting at line 109 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/VCodesActivity.java
+
+			severityButtons[i].setChecked(false);
+		}
+
+		if(v != null) {
+			v.setChecked(checked);
+		}
+	}
+
+	private int getGlobalWarValue() {
+=====================================================================
+Found a 2 line (25 tokens) duplication in the following files: 
+Starting at line 289 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+Starting at line 322 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+	private ArrayList<HashMap<String,Object>> buildItemsHashList(ArrayList<Item> itemsIn) {
+		ArrayList<HashMap<String,Object>> items = new ArrayList<HashMap<String,Object>>();
+=====================================================================
+Found a 8 line (25 tokens) duplication in the following files: 
+Starting at line 69 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+Starting at line 78 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+				this.itemResId,
+				new String[]{
+						LIST_ITEM_TITLE,
+				},
+				new int[] {
+						android.R.id.text1,
+				}
+		);
+=====================================================================
+Found a 5 line (25 tokens) duplication in the following files: 
+Starting at line 191 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLWorkflowActivity.java
+Starting at line 238 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/XMLItemsBrowserActivity.java
+
+		} catch (XmlPullParserException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+=====================================================================
+Found a 4 line (25 tokens) duplication in the following files: 
+Starting at line 258 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/activity/qa/XMLQAManager.java
+Starting at line 42 of /home/robbiev/workspace/Mild TBI/src/com/t2/mtbi/WorkflowStep.java
+
+	private WorkflowStep(Parcel in) {
+		this.id = in.readString();
+		this.title = in.readString();
+		this.negativeId = in.readString();
