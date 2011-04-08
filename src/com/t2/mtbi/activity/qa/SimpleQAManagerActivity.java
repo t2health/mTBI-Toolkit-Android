@@ -112,8 +112,10 @@ public abstract class SimpleQAManagerActivity extends XMLQAManager implements On
 		try {
 			File outputFile = new File(Environment.getExternalStorageDirectory(), "results.csv");
 			outputFile.deleteOnExit();
-			if(!(outputFile.exists() && outputFile.delete())) {
-				return;
+			if(outputFile.exists()) {
+				if(!outputFile.delete()) {
+					return;
+				}
 			}
 
 			BufferedWriter fw = new BufferedWriter(new FileWriter(outputFile));
