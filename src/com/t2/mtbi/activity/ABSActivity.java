@@ -25,7 +25,6 @@ public class ABSActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		sharedPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-		Eula.show(this);
 
 		if(!Constant.DEV_MODE) {
 	        if(SharedPref.getSendAnnonData(sharedPref) &&

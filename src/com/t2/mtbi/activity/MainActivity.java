@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TabHost;
 
 import com.t2.mtbi.ActivityIntents;
+import com.t2.mtbi.Eula;
 import com.t2.mtbi.R;
 
 public class MainActivity extends TabActivity {
@@ -18,6 +19,8 @@ public class MainActivity extends TabActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		Eula.show(this);
+		
 		this.setContentView(R.layout.main_activity);
 
 		Resources res = this.getResources();
