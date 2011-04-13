@@ -65,7 +65,6 @@ public abstract class XMLQAManager extends ABSNavigationActivity {
 					for(int i = 0; i < qAnswers.length; ++i) {
 						qAnswers[i] = (Answer)parcels[i];
 					}
-					Log.v(TAG, "ANSARR:"+qAnswers.length);
 					this.addSelectedAnswer(
 							(Question)data.getParcelableExtra(XMLQAQuestion.EXTRA_QUESTION),
 							qAnswers
