@@ -123,8 +123,7 @@
        	</activity>
 
        	<activity
-        	android:name=".activity.XMLWorkflowActivity"
-			android:screenOrientation="portrait">
+        	android:name=".activity.XMLWorkflowActivity">
        	</activity>
 
     </application>
