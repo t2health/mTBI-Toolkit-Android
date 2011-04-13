@@ -2,7 +2,7 @@
 <items title="Patient Education" style="separated">
 	<item title="Driving Following TBI" id="dd0" />
 
-		<item title="Congerence (2009): Summary of Clinical Recommendations" id="dd" parentId="dd0" style="separated" />
+		<item title="Conference (2009): Summary of Clinical Recommendations" id="dd" parentId="dd0" style="separated" />
 			<item title="Introduction" id="dd-intro" parentId="dd" />
 			<item title="Summary" parentId="dd-intro">
 				<![CDATA[

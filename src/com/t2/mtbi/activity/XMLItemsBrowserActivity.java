@@ -350,7 +350,8 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 			intent.putExtra(XMLItemsBrowserActivity.EXTRA_HEADER_RES_ID, this.seperatorResId);
 			intent.putExtra(XMLItemsBrowserActivity.EXTRA_ITEM_RES_ID, this.itemResId);
 			this.startActivity(intent);
-		} else {
+			
+		} else if(item.content != null && item.content.length() > 0){
 			Intent intent = new Intent(this, WebViewActivity.class);
 			intent.putExtra(WebViewActivity.EXTRA_CONTENT, item.content);
 			intent.putExtra(WebViewActivity.EXTRA_TITLE, item.title);
@@ -417,7 +418,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 		private ArrayList<HashMap<String,Object>> seperators = new ArrayList<HashMap<String,Object>>();
 		private SimpleAdapter seperatorAdapter;
 
-		public SimpleSeperatorAdapter(Context context,
+		/*public SimpleSeperatorAdapter(Context context,
 				List<? extends Map<String, Object>> data, int resource,
 				String[] from, int[] to) {
 			super(context, data, resource, from, to);
@@ -429,7 +430,7 @@ public class XMLItemsBrowserActivity extends ABSNavigationActivity implements On
 					from,
 					to
 			);
-		}
+		}*/
 
 		public SimpleSeperatorAdapter(Context context, List<? extends Map<String, Object>> data,
 				int itemResource, String[] itemFrom, int[] itemTo,
