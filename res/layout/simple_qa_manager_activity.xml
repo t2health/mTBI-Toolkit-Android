@@ -56,11 +56,11 @@
 				    	android:text="@string/details"
 				    	android:visibility="gone" />
 
-			    	<Button
+			    	<!-- <Button
 			    		android:id="@+id/sendResultsButton"
 			    		android:layout_width="fill_parent"
 			    		android:layout_height="wrap_content"
-			    		android:text="@string/send_results" />
+			    		android:text="@string/send_results" /> -->
 		    	</LinearLayout>
 	        </LinearLayout>
 	    </LinearLayout>

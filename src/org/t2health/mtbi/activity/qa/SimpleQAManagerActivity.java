@@ -52,7 +52,7 @@ public abstract class SimpleQAManagerActivity extends XMLQAManager implements On
 		this.findViewById(R.id.score_wrapper).setVisibility(View.GONE);
 		this.findViewById(R.id.startButton).setOnClickListener(this);
 
-		this.findViewById(R.id.sendResultsButton).setOnClickListener(this);
+//		this.findViewById(R.id.sendResultsButton).setOnClickListener(this);
 
 		listView = (ListView)this.findViewById(R.id.list);
 		listView.setEmptyView(this.findViewById(R.id.emptyListView));
@@ -105,8 +105,8 @@ public abstract class SimpleQAManagerActivity extends XMLQAManager implements On
 			this.startActivity(intent);
 			break;
 
-		case R.id.sendResultsButton:
-			sendResults();
+		/*case R.id.sendResultsButton:
+			sendResults();*/
 		}
 	}
 
