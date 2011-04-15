@@ -60,9 +60,14 @@ public class QAMAFSliderQuestionActivity extends XMLQAQuestion implements OnTouc
 		nextButton = this.findViewById(R.id.nextButton);
 		nextButton.setOnClickListener(this);
 
+		String desc = getString(R.string.qa_maf_slider_desc);
+		desc = desc.replace("{0}", answers[0].value+"");
+		desc = desc.replace("{0}", answers[answers.length-1].value+"");
+		
 		seekBar = (SeekBar)this.findViewById(R.id.seekBar);
 		seekBar.setMax(this.answers.length-1);
 		seekBar.setOnSeekBarChangeListener(this);
+		seekBar.setContentDescription(desc);
 
 		LinearLayout answerValueLabels = (LinearLayout)this.findViewById(R.id.answerValueLabels);
 		LinearLayout answerLabels = (LinearLayout)this.findViewById(R.id.answerLabels);

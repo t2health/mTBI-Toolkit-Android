@@ -16,6 +16,12 @@
 	<string name="send_results">Send Results</string>
 	<string name="send_results_subject">Sending results for assessment: {0}</string>
 	<string name="about">About</string>
+	
+	<string name="splash_title">Mild Traumatic Brain Injury Pocket Guide (CONUS)</string>
+	
+	<string name="qa_maf_selected_score_desc">Your current score</string>
+	<string name="qa_maf_slider_desc">Move the slider to choose your score from {0} to {1}.</string>
+	<string name="vcodes_selected_vcode_desc">The generated V-Code.</string>
 
     <!-- EULA -->
 	<string name="eula_title">License</string>

@@ -25,10 +25,12 @@ public final class R {
         public static final int scope=0x7f020008;
         public static final int splash=0x7f020009;
         public static final int splash_icons=0x7f02000a;
-        public static final int star_bg=0x7f02000b;
-        public static final int title_bg=0x7f02000c;
-        public static final int white_down_arrow=0x7f02000d;
-        public static final int white_rounded_box=0x7f02000e;
+        public static final int splash_icons_bg_gradient=0x7f02000b;
+        public static final int splash_image=0x7f02000c;
+        public static final int star_bg=0x7f02000d;
+        public static final int title_bg=0x7f02000e;
+        public static final int white_down_arrow=0x7f02000f;
+        public static final int white_rounded_box=0x7f020010;
     }
     public static final class id {
         public static final int about=0x7f090028;
@@ -95,45 +97,49 @@ public final class R {
     }
     public static final class string {
         public static final int about=0x7f05000f;
-        public static final int about_content=0x7f050024;
-        public static final int about_title=0x7f050023;
+        public static final int about_content=0x7f050028;
+        public static final int about_title=0x7f050027;
         public static final int app_name=0x7f050000;
         public static final int back=0x7f050001;
-        public static final int coding_tab_title=0x7f05001c;
-        public static final int cognitive_rehabilitation_tab_title=0x7f05001e;
-        public static final int confirm_question_exit_message=0x7f050025;
+        public static final int coding_tab_title=0x7f050020;
+        public static final int cognitive_rehabilitation_tab_title=0x7f050022;
+        public static final int confirm_question_exit_message=0x7f050029;
         public static final int details=0x7f05000b;
-        public static final int eula_accept=0x7f050011;
-        public static final int eula_refuse=0x7f050012;
+        public static final int eula_accept=0x7f050015;
+        public static final int eula_refuse=0x7f050016;
         /**  EULA 
          */
-        public static final int eula_title=0x7f050010;
+        public static final int eula_title=0x7f050014;
         public static final int finish=0x7f05000a;
-        public static final int guidelines_tab_title=0x7f05001b;
-        public static final int home_tab_title=0x7f05001a;
-        public static final int home_title=0x7f050021;
+        public static final int guidelines_tab_title=0x7f05001f;
+        public static final int home_tab_title=0x7f05001e;
+        public static final int home_title=0x7f050025;
         public static final int mild=0x7f050005;
         public static final int moderate=0x7f050006;
         public static final int next=0x7f050009;
         public static final int no=0x7f050003;
-        public static final int patient_education_tab_title=0x7f05001f;
+        public static final int patient_education_tab_title=0x7f050023;
         public static final int penetrating=0x7f050008;
         public static final int preferences_title=0x7f05000c;
-        public static final int send_anon_data=0x7f050013;
-        public static final int send_anon_data_desc=0x7f050014;
+        public static final int qa_maf_selected_score_desc=0x7f050011;
+        public static final int qa_maf_slider_desc=0x7f050012;
+        public static final int send_anon_data=0x7f050017;
+        public static final int send_anon_data_desc=0x7f050018;
         public static final int send_results=0x7f05000d;
         public static final int send_results_subject=0x7f05000e;
         public static final int severe=0x7f050007;
-        public static final int start_questionare=0x7f050017;
-        public static final int symptoms_managment_tab_title=0x7f05001d;
-        public static final int tbi_basics_content=0x7f050026;
-        public static final int tools_tab_title=0x7f050020;
-        public static final int total_score=0x7f050022;
+        public static final int splash_title=0x7f050010;
+        public static final int start_questionare=0x7f05001b;
+        public static final int symptoms_managment_tab_title=0x7f050021;
+        public static final int tbi_basics_content=0x7f05002a;
+        public static final int tools_tab_title=0x7f050024;
+        public static final int total_score=0x7f050026;
         public static final int unknown=0x7f050004;
-        public static final int v_code=0x7f050016;
-        public static final int v_codes_title=0x7f050015;
-        public static final int vcode_global_war=0x7f050018;
-        public static final int vcode_level_of_severity=0x7f050019;
+        public static final int v_code=0x7f05001a;
+        public static final int v_codes_title=0x7f050019;
+        public static final int vcode_global_war=0x7f05001c;
+        public static final int vcode_level_of_severity=0x7f05001d;
+        public static final int vcodes_selected_vcode_desc=0x7f050013;
         public static final int yes=0x7f050002;
     }
     public static final class style {

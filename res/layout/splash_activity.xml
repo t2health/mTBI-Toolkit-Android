@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-	xmlns:android="http://schemas.android.com/apk/res/android">
-	<ImageView
-		android:id="@+id/baseView"
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/baseView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FF000000">
+	
+	<LinearLayout
 		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:scaleType="centerCrop"
-		android:src="@drawable/splash" />
-
-	<ImageView
-		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_gravity="bottom|left"
+		android:layout_gravity="center"
+		android:paddingBottom="75dip"
+		android:orientation="vertical">
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="5dip"
+			android:background="#FFFF0000" />
+		<ImageView
+			android:id="@+id/baseView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:scaleType="centerCrop"
+			android:src="@drawable/splash_image" />
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="5dip"
+			android:background="#FFFF0000" />
+	
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="15dip"
+			android:textSize="20sp"
+			android:textColor="#FFFFFFFF"
+			android:textStyle="bold"
+			android:text="@string/splash_title" />
+	</LinearLayout>
+	
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
 		android:src="@drawable/splash_icons" />
-</merge>
+</FrameLayout>

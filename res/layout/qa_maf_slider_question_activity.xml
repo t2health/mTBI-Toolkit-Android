@@ -45,11 +45,13 @@
 				android:layout_height="wrap_content"
 				android:editable="false"
 				android:focusable="false"
-				android:gravity="center" />
+				android:gravity="center"
+				android:contentDescription="@string/qa_maf_selected_score_desc" />
 			<SeekBar
 				android:id="@+id/seekBar"
 				android:layout_width="fill_parent"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/qa_maf_slider_desc" />
 			<LinearLayout
 				android:id="@+id/answerValueLabels"
 				android:layout_width="fill_parent"

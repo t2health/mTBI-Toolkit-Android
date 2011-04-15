@@ -69,19 +69,23 @@ public class ABSNavigationActivity extends ABSActivity {
 			this.title = null;
 		}
 		((TextView)this.findViewById(R.id.navigationTitle)).setText(title);
+		super.setTitle(title);
 	}
 
 	@Override
 	public void setTitle(int titleId) {
 		this.title = getString(titleId);
 		((TextView)this.findViewById(R.id.navigationTitle)).setText(titleId);
+		super.setTitle(title);
 	}
+	
+	
 
 	@Override
 	public void setTitleColor(int textColor) {
 		((TextView)this.findViewById(R.id.navigationTitle)).setTextColor(textColor);
 	}
-
+	
 	private void initialize() {
 		this.setBackButtonVisibility(backButtonVisibility);
 		this.setInfoButtonVisibility(infoButtonVisibility);

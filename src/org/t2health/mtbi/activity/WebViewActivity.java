@@ -45,7 +45,7 @@ public class WebViewActivity extends ABSNavigationActivity {
 		Log.v(TAG, "webContent:"+contentString);
 
 		WebView wv = (WebView)this.findViewById(R.id.webview);
-
+		
 		DisplayMetrics metrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
 

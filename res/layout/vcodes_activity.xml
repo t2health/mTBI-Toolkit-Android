@@ -109,7 +109,8 @@
 			android:layout_height="wrap_content"
 			android:editable="false"
 			android:focusable="false"
-			android:gravity="center" />
+			android:gravity="center"
+			android:contentDescription="@string/vcodes_selected_vcode_desc" />
 	</LinearLayout>
 
 </LinearLayout>
