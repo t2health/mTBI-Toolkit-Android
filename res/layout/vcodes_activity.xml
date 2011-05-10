@@ -10,28 +10,29 @@
 		android:layout_height="wrap_content"
 		android:textAppearance="@android:style/TextAppearance.Medium"
 		android:gravity="center"
-		android:text="@string/vcode_global_war" />
+		android:text="@string/vcode_global_war"
+		android:focusable="true" />
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
 		android:layout_marginBottom="20dip">
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/yesButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="10dip"
 			android:text="@string/yes" />
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/noButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="10dip"
 			android:text="@string/no" />
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/unknownButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
@@ -43,27 +44,28 @@
 		android:layout_height="wrap_content"
 		android:textAppearance="@android:style/TextAppearance.Medium"
 		android:gravity="center"
-		android:text="@string/vcode_level_of_severity" />
+		android:text="@string/vcode_level_of_severity"
+		android:focusable="true" />
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center">
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/severityMildButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="10dip"
 			android:text="@string/mild" />
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/severityModerateButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="10dip"
 			android:text="@string/moderate" />
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/severitySevereButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
@@ -74,14 +76,14 @@
 		android:layout_height="wrap_content"
 		android:gravity="center">
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/severityPenetratingButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"
 			android:layout_marginRight="10dip"
 			android:text="@string/penetrating" />
 		<view
-			class="com.t2.mtbi.view.ToggledButton"
+			class="org.t2health.lib.widget.PersistantStateButton"
 			android:id="@+id/severityUnknownButton"
 			android:layout_width="100dip"
 			android:layout_height="wrap_content"

@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import org.t2health.mtbi.WebViewUtil;
+import org.t2health.lib.activity.BaseNavigationActivity;
+import org.t2health.lib.activity.WebViewActivity;
+import org.t2health.lib.util.WebViewUtil;
 import org.t2health.mtbi.WorkflowStep;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -32,7 +34,7 @@ import android.widget.TextView;
 
 import org.t2health.mtbi.R;
 
-public class XMLWorkflowActivity extends ABSNavigationActivity {
+public class XMLWorkflowActivity extends BaseNavigationActivity {
 	private static final String TAG = XMLWorkflowActivity.class.getSimpleName();
 	public static final String EXTRA_XML_RESOURCE = "xmlResourceId";
 	public static final String EXTRA_JUMPTO_NEXT = "jumpToNext";
@@ -62,16 +64,15 @@ public class XMLWorkflowActivity extends ABSNavigationActivity {
 			return;
 		}
 
-		this.workflowSteps = this.getSteps(xmlResourceId);
-		this.currentSteps = new ArrayList<WorkflowStep>();
-		this.adapter = new WorkflowStepAdapter(this, this.currentSteps);
-
-
 		contentArea = new LinearLayout(this);
 		contentArea.setOrientation(LinearLayout.VERTICAL);
 		scrollView = new ScrollView(this);
 		scrollView.addView(contentArea, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 		this.setContentView(scrollView);
+		
+		this.workflowSteps = this.getSteps(xmlResourceId);
+		this.currentSteps = new ArrayList<WorkflowStep>();
+		this.adapter = new WorkflowStepAdapter(this, this.currentSteps);
 
 		/*listView = new ListView(this);
 		listView.setScrollingCacheEnabled(false);
@@ -282,7 +283,7 @@ Log.v(TAG, "neutral:"+step.neutralButtonActive);
 				((ViewGroup)newView.findViewById(R.id.text2).getParent()).removeView(newView.findViewById(R.id.text2));
 			} else {
 				WebView wv = (WebView)newView.findViewById(R.id.text2);
-				WebViewUtil.formatWebView(thisActivity, wv, item.content, Color.BLACK);
+				WebViewUtil.formatWebViewText(thisActivity, wv, item.content, Color.BLACK);
 			}
 
 			newView.findViewById(R.id.detailsButton).setOnClickListener(new OnClickListener() {

@@ -1,6 +1,10 @@
 package org.t2health.mtbi.activity;
 
-import org.t2health.mtbi.activity.qa.SumQAManagerActivity;
+import java.util.LinkedHashMap;
+
+import org.t2health.lib.qa.Answer;
+import org.t2health.lib.qa.Question;
+import org.t2health.lib.qa.SumQAManagerActivity;
 
 import android.content.Intent;
 
@@ -11,7 +15,7 @@ public class QAMAFManagerActivity extends SumQAManagerActivity {
 	protected Question getNextQuestion(Question previousQuestion) {
 		Question nextQuestion = super.getNextQuestion(previousQuestion);
 		if(nextQuestion != null && nextQuestion.id.equals("2")) {
-			if(this.selectdAnswers.get(previousQuestion.id)[0].value > 1) {
+			if(this.getSelectdAnswers().get(previousQuestion.id)[0].value > 1) {
 				return nextQuestion;
 			}
 			return null;
@@ -33,17 +37,20 @@ public class QAMAFManagerActivity extends SumQAManagerActivity {
 
 	@Override
 	protected double getTotalScore() {
+		LinkedHashMap<String, Answer[]> selectedAnswers = this.getSelectdAnswers();
+		LinkedHashMap<String, Question> questions = this.getQuestions();
+		
 		// if the first question indicated nothing, return min value.
-		if(this.selectdAnswers.get("1")[0].value <= 1) {
+		if(selectedAnswers.get("1")[0].value <= 1) {
 			return 1;
 		}
-
+		
 		double firstSum = 0;
 		double secondSum = 0;
 		double secondCount = 0;
-		for(String qId: this.questions.keySet()) {
-			Question q = this.questions.get(qId);
-			Answer selectedAnswer = this.selectdAnswers.get(qId)[0];
+		for(String qId: questions.keySet()) {
+			Question q = questions.get(qId);
+			Answer selectedAnswer = selectedAnswers.get(qId)[0];
 			if(selectedAnswer.value < 0) {
 				continue;
 			}

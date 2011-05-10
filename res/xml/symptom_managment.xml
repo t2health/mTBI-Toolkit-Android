@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items title="Symptom Managment" style="separated">
-	<item title="Managment of Headaches" id="headaches-group" />
-		<item title="Headaches" id="headaches" parentId="headaches-group" style="separated" />
-			<item title="Prevalence and Manifestations" id="headaches-preva" parentId="headaches" />
+<items title="Symptom Management" style="separated">
+	<item title="Management of Headaches" id="headaches-group">
+		<item title="Headaches" id="headaches" parentId="headaches-group" style="separated">
+			<item title="Prevalence and Manifestations" id="headaches-preva" parentId="headaches">
 				<item title="Prevalence and Manifestations" parentId="headaches-preva">
 					<![CDATA[
 						<h2>Prevalence in mild TBI</h2>
@@ -18,8 +18,9 @@
 						</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Assessments (Includes Tension and Migraine)" id="headachesAssessments" parentId="headaches" />
+			<item title="Assessments (Includes Tension and Migraine)" id="headachesAssessments" parentId="headaches">
 				<item title="History" parentId="headachesAssessments">
 					<![CDATA[
 						<ul>
@@ -29,7 +30,6 @@
 							mild TBI is also associated with impaired sleep)</li>
 						</ul>
 					]]>
-
 				</item>
 				<item title="Physical Examination" parentId="headachesAssessments">
 					<![CDATA[
@@ -52,8 +52,9 @@
 					</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Referral (Includes Tension and Migraine)" id="headachesReferral" parentId="headaches" />
+			<item title="Referral (Includes Tension and Migraine)" id="headachesReferral" parentId="headaches">
 				<item title="Referral" parentId="headachesReferral">
 					<![CDATA[
 						<ul>
@@ -88,9 +89,10 @@
 						</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Treatment (Includes Tension, Migraine and Chronic Daily)" id="headacheTreatment" parentId="headaches"/>
-				<item title="Pharmacologic Treatment" id="headachePharmaTreatment" parentId="headacheTreatment" />
+			<item title="Treatment (Includes Tension, Migraine and Chronic Daily)" id="headacheTreatment" parentId="headaches">
+				<item title="Pharmacologic Treatment" id="headachePharmaTreatment" parentId="headacheTreatment">
 					<item title="Tension" id="treat-tension-headache" parentId="headachePharmaTreatment"><![CDATA[
 						<p>Typically given for more mild tension headache:</p>
 						<ul>
@@ -163,28 +165,29 @@
 					]]></item>
 
 					<item title="Post-concussive" parentId="headachePharmaTreatment"><![CDATA[
-					<style type="text/css">
-						table {
-							width: 100%;
-						}
-
-						table td, table th {
-							width: 50%;
-							text-align: center;
-						}
-					</style>
-					<p>Are migraine symptoms present (throbbing headache, nausea, vomiting, photophobia, phonophobia)?</p>
-					<table>
-						<tr>
-							<td>
-								<button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_managment/treat-migraine-headache'; return false;">Yes - Treat as a migraine headache</button>
-							</td>
-							<td>
-								<button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_managment/treat-tension-headache'; return false;">No - Treat as a tension headache</button>
-							</td>
-						</tr>
-					</table>
+						<style type="text/css">
+							table {
+								width: 100%;
+							}
+	
+							table td, table th {
+								width: 50%;
+								text-align: center;
+							}
+						</style>
+						<p>Are migraine symptoms present (throbbing headache, nausea, vomiting, photophobia, phonophobia)?</p>
+						<table>
+							<tr>
+								<td>
+									<button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_management/treat-migraine-headache'; return false;">Yes - Treat as a migraine headache</button>
+								</td>
+								<td>
+									<button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_management/treat-tension-headache'; return false;">No - Treat as a tension headache</button>
+								</td>
+							</tr>
+						</table>
 					]]></item>
+				</item>
 
 				<item title="Non-pharmacologic Treatment" parentId="headacheTreatment">
 					<![CDATA[
@@ -201,10 +204,13 @@
 						</ul>
 					]]>
 				</item>
+			</item>
+		</item>
+	</item>
 
-	<item title="Managment of Other Symptoms" id="other-symptoms" />
-		<item title="Dizziness and Disequilibrium" id="diziness" parentId="other-symptoms" style="separated" />
-			<item title="Prevalence and Manifestations" id="dizziness-preva" parentId="diziness" />
+	<item title="Management of Other Symptoms" id="other-symptoms">
+		<item title="Dizziness and Disequilibrium" id="diziness" parentId="other-symptoms" style="separated">
+			<item title="Prevalence and Manifestations" id="dizziness-preva" parentId="diziness">
 				<item title="Prevalence and Manifestations" parentId="dizziness-preva">
 					<![CDATA[
 					<h2>Prevalence in mild TBI</h2>
@@ -219,8 +225,9 @@
 					</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Assessments" id="dizinessAssessments" parentId="diziness" />
+			<item title="Assessments" id="dizinessAssessments" parentId="diziness">
 				<item title="Physical Assessment" parentId="dizinessAssessments">
 					<![CDATA[
 					<ul>
@@ -303,8 +310,9 @@
 					</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Referral" id="dizinessReferral" parentId="diziness" />
+			<item title="Referral" id="dizinessReferral" parentId="diziness">
 				<item title="Referral" parentId="dizinessReferral">
 					<![CDATA[
 					<ul>
@@ -339,8 +347,9 @@
 					</ul>
 					]]>
 				</item>
+			</item>
 
-			<item title="Treatment" id="dizinessTreatment" parentId="diziness"/>
+			<item title="Treatment" id="dizinessTreatment" parentId="diziness">
 				<item title="Pharmacologic Treatment" parentId="dizinessTreatment">
 					<![CDATA[
 					<ul>
@@ -361,8 +370,10 @@
 					<button onclick="document.location.href='t2mtbi://workflow/vestibular_excersises_workflow'; return false;">Vestibular and balance rehabilitation</button>
 					]]>
 				</item>
+			</item>
+		</item>
 
-		<item title="Fatigue Symptoms" id="fatigue" parentId="other-symptoms" style="separated" />
+		<item title="Fatigue Symptoms" id="fatigue" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="fatigue"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -376,74 +387,78 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="fatigue-assessments" parentId="fatigue" />
+			<item title="Assessments" id="fatigue-assessments" parentId="fatigue">
 				<item title="History" parentId="fatigue-assessments"><![CDATA[
-				<ul>
-					<li>Pre/post-injury level of
 					<ul>
-						<li>Physical activity</li>
-						<li>Cognitive function</li>
-						<li>Mental health</li>
+						<li>Pre/post-injury level of
+						<ul>
+							<li>Physical activity</li>
+							<li>Cognitive function</li>
+							<li>Mental health</li>
+						</ul>
+						<li>Identify and treat underlying medical and psychological disorders</li>
 					</ul>
-					<li>Identify and treat underlying medical and psychological disorders</li>
-				</ul>
 				]]></item>
 
 				<item title="Physical Assessment" parentId="fatigue-assessments"><![CDATA[
-				<ul>
-					<li>Multidimensional Assessment of Fatigue (MAF)</li>
-					<li>Fatigue Impact Scale (FIS)</li>
-					<li>Fatigue Assessment Instrument (FAI)</li>
-					<li>Laboratory tests
 					<ul>
-						<li>Complete blood count (CBC)</li>
-						<li>Metabolic panel</li>
-						<li>Vitamin B12 and folate</li>
-						<li>Thyroid function test</li>
-						<li>Erythrocyte Sedimentation Rate (ESR)</li>
+						<li>Multidimensional Assessment of Fatigue (MAF)</li>
+						<li>Fatigue Impact Scale (FIS)</li>
+						<li>Fatigue Assessment Instrument (FAI)</li>
+						<li>Laboratory tests
+						<ul>
+							<li>Complete blood count (CBC)</li>
+							<li>Metabolic panel</li>
+							<li>Vitamin B12 and folate</li>
+							<li>Thyroid function test</li>
+							<li>Erythrocyte Sedimentation Rate (ESR)</li>
+						</ul>
 					</ul>
-				</ul>
 				]]></item>
 
 				<item title="Medication review " parentId="fatigue-assessments"><![CDATA[
-				<ul>
-					<li>If medication appears contributory, perform Applied Behavioral Analysis (ABA) trial to determine the association</li>
-				</ul>
-				]]></item>
-
-			<item title="Referral" id="fatigue-referral" parentId="fatigue" />
-				<item title="Patient Education " parentId="fatigue-referral"><![CDATA[
-				<ul>
-					<li>Identify factors contributing to fatigue</li>
-					<li>Eat well-balanced meals</li>
-					<li>Practice sleep hygiene</li>
-					<li>Maintain regular exercise</li>
-				</ul>
-				]]></item>
-
-			<item title="Treatment" id="fatigue-treatment" parentId="fatigue" />
-				<item title="Pharmacologic Treatment " parentId="fatigue-treatment"><![CDATA[
-				<ul>
-					<li>Address modifiable factors prior to initiating pharmacotherapy</li>
-					<li>Persistent symptoms ( > four weeks) without improvement with sleep, pain, depression and lifestyle, may consider neurostimulant (contraindicated if history of substance abuse):
 					<ul>
-						<li>Methylphenidate 5mg Q 0800 and Q 1300. Increase total daily dose by 5mg Q 2 weeks to maximum dose of 20mg BID</li>
-						<li>Modafanil 100mg QAM. Increase by 100mg, using split daily dosing up to maximum of 400mg/day</li>
+						<li>If medication appears contributory, perform Applied Behavioral Analysis (ABA) trial to determine the association</li>
 					</ul>
-					<li>Amantadine 100–400mg QD <li>Medication trial for at least three months</li>
-				</ul>
+				]]></item>
+			</item>
+
+			<item title="Referral" id="fatigue-referral" parentId="fatigue">
+				<item title="Patient Education " parentId="fatigue-referral"><![CDATA[
+					<ul>
+						<li>Identify factors contributing to fatigue</li>
+						<li>Eat well-balanced meals</li>
+						<li>Practice sleep hygiene</li>
+						<li>Maintain regular exercise</li>
+					</ul>
+				]]></item>
+			</item>
+
+			<item title="Treatment" id="fatigue-treatment" parentId="fatigue">
+				<item title="Pharmacologic Treatment " parentId="fatigue-treatment"><![CDATA[
+					<ul>
+						<li>Address modifiable factors prior to initiating pharmacotherapy</li>
+						<li>Persistent symptoms ( > four weeks) without improvement with sleep, pain, depression and lifestyle, may consider neurostimulant (contraindicated if history of substance abuse):
+						<ul>
+							<li>Methylphenidate 5mg Q 0800 and Q 1300. Increase total daily dose by 5mg Q 2 weeks to maximum dose of 20mg BID</li>
+							<li>Modafanil 100mg QAM. Increase by 100mg, using split daily dosing up to maximum of 400mg/day</li>
+						</ul>
+						<li>Amantadine 100–400mg QD <li>Medication trial for at least three months</li>
+					</ul>
 				]]></item>
 
 				<item title="Non-pharmacologic Treatment " parentId="fatigue-treatment"><![CDATA[
-				<ul>
-					<li>Well balanced meals</li>
-					<li>Sleep hygiene</li>
-					<li>Regular exercise</li>
-					<li>Cognitive behavioral therapy and physical therapy to improve functional performance</li>
-				</ul>
+					<ul>
+						<li>Well balanced meals</li>
+						<li>Sleep hygiene</li>
+						<li>Regular exercise</li>
+						<li>Cognitive behavioral therapy and physical therapy to improve functional performance</li>
+					</ul>
 				]]></item>
+			</item>
+		</item>
 
-		<item title="Sleep Symptoms" id="sleep" parentId="other-symptoms" style="separated" />
+		<item title="Sleep Symptoms" id="sleep" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="sleep"><![CDATA[
 				<h2>Prevalence in mild TBI</h2>
 				<ul>
@@ -458,82 +473,86 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="sleep-assessments" parentId="sleep" />
+			<item title="Assessments" id="sleep-assessments" parentId="sleep">
 				<item title="History" parentId="sleep-assessments"><![CDATA[
-				Evaluate for:
-				<ul>
-					<li>Sleep routine</li>
-					<li>Sleep activity</li>
-					<li>Nightmares and frightened arousal</li>
-					<li>Other current health conditions that might contribute (i.e., chronic pain)</li>
-					<li>Potential cormorbid psychiatric conditions including depression and anxiety</li>
-				</ul>
+					Evaluate for:
+					<ul>
+						<li>Sleep routine</li>
+						<li>Sleep activity</li>
+						<li>Nightmares and frightened arousal</li>
+						<li>Other current health conditions that might contribute (i.e., chronic pain)</li>
+						<li>Potential cormorbid psychiatric conditions including depression and anxiety</li>
+					</ul>
 				]]></item>
 
 				<item title="Physical Assessment" parentId="sleep-assessments"><![CDATA[
-				<ul>
-					<li>Examine neck size, airway, height, weight</li>
-					<li>
-						<button onclick="document.location.href='t2mtbi://assessment/qa_ess'; return false;">Administer Epworth Sleepiness Scale (ESS)</button>
-					</li>
-					<li>Consider administering <a href="http://www.google.com/search?q=Pittsburgh+Sleep+Quality+Index+(PSQI)">Pittsburgh Sleep Quality Index (PSQI)</a></li>
-				</ul>
+					<ul>
+						<li>Examine neck size, airway, height, weight</li>
+						<li>
+							<button onclick="document.location.href='t2mtbi://assessment/qa_ess'; return false;">Administer Epworth Sleepiness Scale (ESS)</button>
+						</li>
+						<li>Consider administering <a href="http://www.google.com/search?q=Pittsburgh+Sleep+Quality+Index+(PSQI)">Pittsburgh Sleep Quality Index (PSQI)</a></li>
+					</ul>
 				]]></item>
 
 				<item title="Medication review " parentId="sleep-assessments"><![CDATA[
-				<ul>
-					<li>Medication and supplement use</li>
-				</ul>
+					<ul>
+						<li>Medication and supplement use</li>
+					</ul>
 				]]></item>
+			</item>
 
-			<item title="Referral" id="sleep-referral" parentId="sleep" />
+			<item title="Referral" id="sleep-referral" parentId="sleep">
 				<item title="Referral " parentId="sleep-referral"><![CDATA[
-				<ul>
-					<li>Sleep study referral
-						<ul>
-							<li>Apnea</li>
-							<li>ESS >12</li>
-							<li>Body Mass Index (BMI) >30</li>
-						</ul>
-					</li>
-				</ul>
+					<ul>
+						<li>Sleep study referral
+							<ul>
+								<li>Apnea</li>
+								<li>ESS >12</li>
+								<li>Body Mass Index (BMI) >30</li>
+							</ul>
+						</li>
+					</ul>
 				]]></item>
 				<item title="Patient Education " parentId="sleep-referral"><![CDATA[
-				<ul>
-					<li>No caffeine, heavy exercise, alcohol, nicotine, power drinks, stimulants or heavy meals three hours prior to bedtime</li>
-					<li>Avoid bright light exposure near bedtime</li>
-					<li>Keep regular bedtime and wakeup hours</li>
-					<li>Foster quiet, pleasant sleep environment</li>
-					<li>Stop work or TV viewing at least one hour before bedtime</li>
-					<li>Use bed only for sleep and sex</li>
-					<li>Reduce or eliminate daytime naps</li>
-					<li>Consult with healthcare professional before taking any OTC medications or supplements</li>
-					<li>Restrict nighttime sleep period to eight hours</li>
-					<li>Engage in daytime physical and mental activities (within limits of individual’s capacity)</li>
-					<li>Go to another room if sleep does not come within 20–30 minutes</li>
-					<li>Have a relaxing bedtime routine</li>
-				</ul>
+					<ul>
+						<li>No caffeine, heavy exercise, alcohol, nicotine, power drinks, stimulants or heavy meals three hours prior to bedtime</li>
+						<li>Avoid bright light exposure near bedtime</li>
+						<li>Keep regular bedtime and wakeup hours</li>
+						<li>Foster quiet, pleasant sleep environment</li>
+						<li>Stop work or TV viewing at least one hour before bedtime</li>
+						<li>Use bed only for sleep and sex</li>
+						<li>Reduce or eliminate daytime naps</li>
+						<li>Consult with healthcare professional before taking any OTC medications or supplements</li>
+						<li>Restrict nighttime sleep period to eight hours</li>
+						<li>Engage in daytime physical and mental activities (within limits of individual’s capacity)</li>
+						<li>Go to another room if sleep does not come within 20–30 minutes</li>
+						<li>Have a relaxing bedtime routine</li>
+					</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="sleep-treatment" parentId="sleep" />
+			<item title="Treatment" id="sleep-treatment" parentId="sleep">
 				<item title="Pharmacologic Treatment " parentId="sleep-treatment"><![CDATA[
-				<ul>
-					<li>Zolpidem 5mg QHS. If poor results after three nights, may increase to 10mg QHS</li>
-					<li>Zolpidem 5–10mg QHS max duration 10 days</li>
-					<li>Trazodone 25–50mg QHS max dose 150mg (sleep maintenance)</li>
-					<li>Amitriptyline 25mg QHS max dose 100mg (headache benefit)</li>
-				</ul>
+					<ul>
+						<li>Zolpidem 5mg QHS. If poor results after three nights, may increase to 10mg QHS</li>
+						<li>Zolpidem 5–10mg QHS max duration 10 days</li>
+						<li>Trazodone 25–50mg QHS max dose 150mg (sleep maintenance)</li>
+						<li>Amitriptyline 25mg QHS max dose 100mg (headache benefit)</li>
+					</ul>
 				]]></item>
 
 				<item title="Non-pharmacologic Treatment " parentId="sleep-treatment"><![CDATA[
-				<ul>
-					<li>Sleep hygiene</li>
-					<li>Cognitive behavioral therapy focused on sleep with additional behavioral interventions to include sleep restriction, stimulus control, and relapse prevention techniques</li>
-					<li>Reduce stimulation before bedtime</li>
-				</ul>
+					<ul>
+						<li>Sleep hygiene</li>
+						<li>Cognitive behavioral therapy focused on sleep with additional behavioral interventions to include sleep restriction, stimulus control, and relapse prevention techniques</li>
+						<li>Reduce stimulation before bedtime</li>
+					</ul>
 				]]></item>
+			</item>
+		</item>
 
-		<item title="Vision Symptoms" id="vision" parentId="other-symptoms" style="separated" />
+		<item title="Vision Symptoms" id="vision" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="vision"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -546,51 +565,55 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="vision-assessments" parentId="vision" />
+			<item title="Assessments" id="vision-assessments" parentId="vision">
 				<item title="History" parentId="vision-assessments"><![CDATA[
-				<ul>
-					<li>Pre-injury visual deficits</li>
-				</ul>
+					<ul>
+						<li>Pre-injury visual deficits</li>
+					</ul>
 				]]></item>
 
 				<item title="Physical Assessment" parentId="vision-assessments"><![CDATA[
-				<ul>
-					<li>Ophthalmologic examination
 					<ul>
-						<li>Extraocular movements</li>
-						<li>Pupils</li>
-						<li>Visual fields by confrontation</li>
-						<li>Fundoscopic exam</li>
-						<li>Visual acuity</li>
+						<li>Ophthalmologic examination
+						<ul>
+							<li>Extraocular movements</li>
+							<li>Pupils</li>
+							<li>Visual fields by confrontation</li>
+							<li>Fundoscopic exam</li>
+							<li>Visual acuity</li>
+						</ul>
 					</ul>
-				</ul>
 				]]></item>
+			</item>
 
-			<item title="Referral" id="vision-referral" parentId="vision" />
+			<item title="Referral" id="vision-referral" parentId="vision">
 				<item title="Referral " parentId="vision-referral"><![CDATA[
-				<ul>
-					<li>Optometry (request ocular testing) and Ophthalmology</li>
-					<li>Neurology
 					<ul>
-						<li>Papilledema</li>
-						<li>Cranial nerve deficit</li>
+						<li>Optometry (request ocular testing) and Ophthalmology</li>
+						<li>Neurology
+						<ul>
+							<li>Papilledema</li>
+							<li>Cranial nerve deficit</li>
+						</ul>
 					</ul>
-				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="vision-treatment" parentId="vision" />
+			<item title="Treatment" id="vision-treatment" parentId="vision">
 				<item title="Non-pharmacologic Treatment " parentId="vision-treatment"><![CDATA[
-				<ul>
-					<li>Initial use of sunglasses followed by formal weaning program (decrease by 15 minutes every two hours)</li>
-					<li>Control environmental light</li>
-					<li>Intermittent patching for double vision</li>
-					<li>Provide reassurance</li>
-					<li>Manage pain</li>
-				</ul>
+					<ul>
+						<li>Initial use of sunglasses followed by formal weaning program (decrease by 15 minutes every two hours)</li>
+						<li>Control environmental light</li>
+						<li>Intermittent patching for double vision</li>
+						<li>Provide reassurance</li>
+						<li>Manage pain</li>
+					</ul>
 				]]></item>
+			</item>
+		</item>
 
 
-		<item title="Hearing Symptoms" id="hearing" parentId="other-symptoms" style="separated" />
+		<item title="Hearing Symptoms" id="hearing" parentId="other-symptoms" style="separated" >
 			<item title="Prevalence and Manifestations" parentId="hearing"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -603,36 +626,38 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="hearing-assessments" parentId="hearing" />
+			<item title="Assessments" id="hearing-assessments" parentId="hearing">
 				<item title="History" parentId="hearing-assessments"><![CDATA[
-				<ul>
-					<li>Pre-injury hearing deficits (common)</li>
-				</ul>
+					<ul>
+						<li>Pre-injury hearing deficits (common)</li>
+					</ul>
 				]]></item>
 
 				<item title="Physical Assessment" parentId="hearing-assessments"><![CDATA[
-				<ul>
-					<li>Otologic examination</li>
-					<li>Bedside hearing test</li>
-					<li>Audiogram (if available)</li>
-				</ul>
+					<ul>
+						<li>Otologic examination</li>
+						<li>Bedside hearing test</li>
+						<li>Audiogram (if available)</li>
+					</ul>
 				]]></item>
 
 				<item title="Medication review " parentId="hearing-assessments"><![CDATA[
-				<ul>
-					<li>Review medications for ototoxicity</li>
-				</ul>
+					<ul>
+						<li>Review medications for ototoxicity</li>
+					</ul>
 				]]></item>
+			</item>
 
-			<item title="Referral" id="hearing-referral" parentId="hearing" />
+			<item title="Referral" id="hearing-referral" parentId="hearing">
 				<item title="Referral " parentId="hearing-referral"><![CDATA[
 				<ul>
 					<li>Audiology (if no other cause is found)</li>
 					<li>ENT (Hemotympanum, foreign body, tympanic membrane perforation)</li>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="hearing-treatment" parentId="hearing" />
+			<item title="Treatment" id="hearing-treatment" parentId="hearing">
 				<item title="Non-pharmacologic Treatment " parentId="hearing-treatment"><![CDATA[
 				<ul>
 					<li>Reassurance</li>
@@ -641,9 +666,10 @@
 					<li>White noise generators</li>
 				</ul>
 				]]></item>
+			</item>
+		</item>
 
-
-		<item title="Olfactory Symptoms" id="olfactory" parentId="other-symptoms" style="separated" />
+		<item title="Olfactory Symptoms" id="olfactory" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="olfactory"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -656,7 +682,7 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="olfactory-assessments" parentId="olfactory" />
+			<item title="Assessments" id="olfactory-assessments" parentId="olfactory">
 				<item title="History" parentId="olfactory-assessments"><![CDATA[
 				<ul>
 					<li>Pre-injury causes of anosmia</li>
@@ -669,15 +695,17 @@
 					<li>Perform depression screen</li>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Referral" id="olfactory-referral" parentId="olfactory" />
+			<item title="Referral" id="olfactory-referral" parentId="olfactory">
 				<item title="Referral " parentId="olfactory-referral"><![CDATA[
 				<ul>
 					<li>ENT (if needed)</li>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="olfactory-treatment" parentId="olfactory" />
+			<item title="Treatment" id="olfactory-treatment" parentId="olfactory">
 				<item title="Non-pharmacologic Treatment " parentId="olfactory-treatment"><![CDATA[
 				<ul>
 					<li>Reassurance and monitoring</li>
@@ -685,8 +713,10 @@
 					<li>Monitor weight</li>
 				</ul>
 				]]></item>
+			</item>
+		</item>
 
-		<item title="Irritability Symptoms" id="irritability" parentId="other-symptoms" style="separated" />
+		<item title="Irritability Symptoms" id="irritability" parentId="other-symptoms" style="separated">
 			<item title="Manifestations" parentId="irritability"><![CDATA[
 			<ul>
 				<li>Anger</li>
@@ -698,7 +728,7 @@
 			</ul>
 			]]></item>
 
-			<item title="Assessments" id="irritability-assessments" parentId="irritability" />
+			<item title="Assessments" id="irritability-assessments" parentId="irritability">
 				<item title="History" parentId="irritability-assessments"><![CDATA[
 				<ul>
 					<li>Evaluate specific history and symptoms:
@@ -716,8 +746,9 @@
 				<p><button onclick="document.location.href='t2mtbi://assessment/qa_pclm'; return false;">Administer PTSD Checklist – Military Version (PCL-M) screening questionnaire</button></p>
 				<p><button onclick="document.location.href='t2mtbi://assessment/qa_phq9'; return false;">Consider Patient Health Questionnaire (PHQ-9) or other depression inventory</button></p>
 				]]></item>
+			</item>
 
-			<item title="Referral" id="irritability-referral" parentId="irritability" />
+			<item title="Referral" id="irritability-referral" parentId="irritability">
 				<item title="Referral " parentId="irritability-referral"><![CDATA[
 					Psychiatry, psychology and social work
 					<ul>
@@ -728,8 +759,9 @@
 					</ul>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="irritability-treatment" parentId="irritability" />
+			<item title="Treatment" id="irritability-treatment" parentId="irritability">
 				<item title="Pharmacologic Treatment " parentId="irritability-treatment"><![CDATA[
 				<ul>
 					<li>Sertraline 25–50mg daily. Titrate Q7–10 days. Max dose 150mg/day</li>
@@ -749,9 +781,11 @@
 					<li>Seek psychological support if these feelings are causing problems at work or home</li>
 				</ul>
 				]]></item>
+			</item>
+		</item>
 
 
-		<item title="Appetite Change Symptoms" id="appetite" parentId="other-symptoms" style="separated" />
+		<item title="Appetite Change Symptoms" id="appetite" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="appetite"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -764,7 +798,7 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="appetite-assessments" parentId="appetite" />
+			<item title="Assessments" id="appetite-assessments" parentId="appetite">
 				<item title="History" parentId="appetite-assessments"><![CDATA[
 				<ul>
 					<li>Pre-injury causes of appetite issues</li>
@@ -783,8 +817,9 @@
 					<li>Assess medication list for agents that can cause olfactory or gustatory abnormalities (centrally acting medications, in particular anti-epileptics, some antibiotics)</li>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="appetite-treatment" parentId="appetite" />
+			<item title="Treatment" id="appetite-treatment" parentId="appetite">
 				<item title="Non-pharmacologic Treatment " parentId="appetite-treatment"><![CDATA[
 				<ul>
 					<li>Reassurance and monitoring</li>
@@ -792,9 +827,11 @@
 					<li>Monitor weight</li>
 				</ul>
 				]]></item>
+			</item>
+		</item>
 
 
-		<item title="Nausea Symptoms" id="nausea" parentId="other-symptoms" style="separated" />
+		<item title="Nausea Symptoms" id="nausea" parentId="other-symptoms" style="separated">
 			<item title="Prevalence and Manifestations" parentId="nausea"><![CDATA[
 				Prevalence in mild TBI
 				<ul>
@@ -807,7 +844,7 @@
 				</ul>
 			]]></item>
 
-			<item title="Assessments" id="nausea-assessments" parentId="nausea" />
+			<item title="Assessments" id="nausea-assessments" parentId="nausea">
 				<item title="History" parentId="nausea-assessments"><![CDATA[
 				<ul>
 					<li>Define triggers and patterns of nausea</li>
@@ -825,12 +862,16 @@
 					<li>Assess medication list for agents that may cause or worsen GI symptoms</li>
 				</ul>
 				]]></item>
+			</item>
 
-			<item title="Treatment" id="nausea-treatment" parentId="nausea" />
+			<item title="Treatment" id="nausea-treatment" parentId="nausea">
 				<item title="Non-pharmacologic Treatment " parentId="nausea-treatment"><![CDATA[
 				<ul>
 					<li>Reassurance and monitoring</li>
 					<li>Encourage rapid dizziness if contributing to cause of nausea</li>
 				</ul>
 				]]></item>
+			</item>
+		</item>
+	</item>
 </items>

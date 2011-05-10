@@ -11,9 +11,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 
+import org.t2health.lib.activity.BaseActivity;
 import org.t2health.mtbi.R;
 
-public class SplashActivity extends ABSActivity implements OnClickListener {
+public class SplashActivity extends BaseActivity implements OnClickListener {
 	private Timer timer = new Timer();
 	private Handler startHandler = new Handler() {
 		@Override

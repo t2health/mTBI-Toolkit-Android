@@ -16,9 +16,10 @@
 	<string name="send_results">Send Results</string>
 	<string name="send_results_subject">Sending results for assessment: {0}</string>
 	<string name="about">About</string>
-	
+
+	<string name="settings">Settings</string>
 	<string name="splash_title">Mild Traumatic Brain Injury Pocket Guide (CONUS)</string>
-	
+
 	<string name="qa_maf_selected_score_desc">Your current score</string>
 	<string name="qa_maf_slider_desc">Move the slider to choose your score from {0} to {1}.</string>
 	<string name="vcodes_selected_vcode_desc">The generated V-Code.</string>
@@ -43,7 +44,7 @@
     <string name="home_tab_title">Home</string>
     <string name="guidelines_tab_title">CPG</string>
     <string name="coding_tab_title">ICD-9</string>
-    <string name="symptoms_managment_tab_title">Symptoms</string>
+    <string name="symptoms_management_tab_title">Symptoms</string>
     <string name="cognitive_rehabilitation_tab_title">Cognitive Rehabilitation</string>
     <string name="patient_education_tab_title">Education</string>
     <string name="tools_tab_title">Tools</string>
@@ -116,7 +117,7 @@
 			<li>Foreign body penetrating the brain </li>
 			<li>Forces generated from events such as blast or explosion, or other force yet to be defined</li>
 		</ul>
-
+<!--
 		<h3>Causes</h3>
 		<p>In the military the leading causes of TBI are:</p>
 		<ul>
@@ -171,5 +172,6 @@
 			<tbody>
 		</table>
 		<p>* GCS is not part of the official DoD definition for TBI but is commonly used in practice</p>
+		-->
     ]]></string>
 </resources>

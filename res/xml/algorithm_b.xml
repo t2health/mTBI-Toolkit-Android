@@ -168,7 +168,7 @@
 	<step id="step8" positiveStepId="" negativeStepId="" neutralStepId="step9">
 		<title>Step Eight: Initiate Symptom-based Treatment</title>
 		<content><![CDATA[
-		<p><button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_managment'; return false;">See specific symptom tabs for symptom management</button></p>
+		<p><button onclick="document.location.href='t2mtbi://itemsbrowser/symptom_management'; return false;">See specific symptom tabs for symptom management</button></p>
 		]]></content>
 		<detailedContent></detailedContent>
 	</step>

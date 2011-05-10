@@ -1,14 +1,15 @@
 package org.t2health.mtbi.activity;
 
-import org.t2health.mtbi.activity.qa.XMLQAQuestion;
-import org.t2health.mtbi.activity.qa.XMLQAManager.Answer;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
@@ -19,9 +20,11 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 
+import org.t2health.lib.qa.Answer;
+import org.t2health.lib.qa.BaseQAQuestionActivity;
 import org.t2health.mtbi.R;
 
-public class QAMAFSliderQuestionActivity extends XMLQAQuestion implements OnTouchListener, OnClickListener, OnCheckedChangeListener, OnSeekBarChangeListener {
+public class QAMAFSliderQuestionActivity extends BaseQAQuestionActivity implements OnTouchListener, OnClickListener, OnCheckedChangeListener, OnSeekBarChangeListener {
 	private View nextButton;
 	private Answer dontCountAnswer;
 	private Answer selectedAnswer;
@@ -63,7 +66,7 @@ public class QAMAFSliderQuestionActivity extends XMLQAQuestion implements OnTouc
 		String desc = getString(R.string.qa_maf_slider_desc);
 		desc = desc.replace("{0}", answers[0].value+"");
 		desc = desc.replace("{0}", answers[answers.length-1].value+"");
-		
+
 		seekBar = (SeekBar)this.findViewById(R.id.seekBar);
 		seekBar.setMax(this.answers.length-1);
 		seekBar.setOnSeekBarChangeListener(this);
@@ -149,6 +152,15 @@ public class QAMAFSliderQuestionActivity extends XMLQAQuestion implements OnTouc
 			nextButton.setEnabled(true);
 			this.selectedAnswer = this.answers[arg1];
 			valueSelectedEditText.setText(this.selectedAnswer.value+"");
+
+			AccessibilityEvent event = AccessibilityEvent.obtain(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+			event.setPackageName(arg0.getClass().getPackage().toString());
+			event.setClassName(arg0.getClass().getSimpleName());
+			event.setContentDescription(this.selectedAnswer.value+"");
+			event.setEventTime(System.currentTimeMillis());
+
+			AccessibilityManager aManager = (AccessibilityManager)this.getSystemService(Context.ACCESSIBILITY_SERVICE);
+			aManager.sendAccessibilityEvent(event);
 		}
 	}
 

@@ -1,61 +1,28 @@
 package org.t2health.mtbi;
 
-import org.t2health.mtbi.activity.CPGActivity;
-import org.t2health.mtbi.activity.CognitiveRehabActivity;
-import org.t2health.mtbi.activity.EducationActivity;
-import org.t2health.mtbi.activity.ICD9Activity;
-import org.t2health.mtbi.activity.MainPreferenceActivity;
-import org.t2health.mtbi.activity.QAMAFManagerActivity;
-import org.t2health.mtbi.activity.QAPHQ9ManagerActivity;
-import org.t2health.mtbi.activity.SymptomManagementActivity;
-import org.t2health.mtbi.activity.ToolsActivity;
-import org.t2health.mtbi.activity.WebViewActivity;
-import org.t2health.mtbi.activity.XMLItemsBrowserActivity;
-import org.t2health.mtbi.activity.XMLWorkflowActivity;
-import org.t2health.mtbi.activity.qa.SumQAManagerActivity;
+
 
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
 
+import org.t2health.lib.activity.WebViewActivity;
+import org.t2health.lib.activity.XMLItemsBrowserActivity;
+import org.t2health.lib.qa.SumQAManagerActivity;
 import org.t2health.mtbi.R;
+import org.t2health.mtbi.activity.MainPreferenceActivity;
+import org.t2health.mtbi.activity.QAMAFManagerActivity;
+import org.t2health.mtbi.activity.QAPHQ9ManagerActivity;
+import org.t2health.mtbi.activity.XMLWorkflowActivity;
 
 public class ActivityIntents {
 	public static Intent getItemBrowserIntent(Context c, int xmlResId, String baseId) {
-		Intent intent = null;
-		switch(xmlResId) {
-		case R.xml.cognitive_rehab:
-			intent = new Intent(c, CognitiveRehabActivity.class);
-			break;
-
-		case R.xml.cpg:
-			intent = new Intent(c, CPGActivity.class);
-			break;
-
-		case R.xml.education:
-			intent = new Intent(c, EducationActivity.class);
-			break;
-
-		case R.xml.icd9_coding:
-			intent = new Intent(c, ICD9Activity.class);
-			break;
-
-		case R.xml.symptom_managment:
-			intent = new Intent(c, SymptomManagementActivity.class);
-			break;
-
-		case R.xml.tools_items:
-			intent = new Intent(c, ToolsActivity.class);
-			break;
-
-		default:
-			intent = new Intent(c, XMLItemsBrowserActivity.class);
-			break;
-		}
-
-		if(baseId != null && intent != null) {
-			intent.putExtra(XMLItemsBrowserActivity.EXTRA_BASE_ITEM_ID, baseId);
-		}
-
+		Intent intent = new Intent(c, XMLItemsBrowserActivity.class);
+		intent.putExtra(XMLItemsBrowserActivity.EXTRA_XML_RESOURCE, xmlResId);
+		intent.putExtra(XMLItemsBrowserActivity.EXTRA_LEFT_BUTTON_VISIBILITY, View.GONE);
+		intent.putExtra(XMLItemsBrowserActivity.EXTRA_LIST_SEPARATOR_RES_ID, R.layout.list_item_1_separator);
+		intent.putExtra(XMLItemsBrowserActivity.EXTRA_LIST_ITEM_RES_ID, R.layout.list_item_1_indent);
+		intent.putExtra(XMLItemsBrowserActivity.EXTRA_START_ID, baseId);
 		return intent;
 	}
 
@@ -99,38 +66,38 @@ public class ActivityIntents {
 		switch(xmlResId) {
 		case R.xml.qa_dhi:
 			intent = new Intent(c, SumQAManagerActivity.class);
-			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESID, R.xml.qa_dhi);
+			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_dhi);
 			return intent;
 
 		case R.xml.qa_ess:
 			intent = new Intent(c, SumQAManagerActivity.class);
-			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESID, R.xml.qa_ess);
+			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_ess);
 			return intent;
 
 		case R.xml.qa_gcs:
 			intent = new Intent(c, SumQAManagerActivity.class);
-			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESID, R.xml.qa_gcs);
+			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_gcs);
 			return intent;
 
 		case R.xml.qa_maf:
 			intent = new Intent(c, QAMAFManagerActivity.class);
-			intent.putExtra(QAMAFManagerActivity.EXTRA_XML_RESID, R.xml.qa_maf);
+			intent.putExtra(QAMAFManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_maf);
 			return intent;
 
 		case R.xml.qa_nsi:
 			intent = new Intent(c, SumQAManagerActivity.class);
 			intent.putExtra(SumQAManagerActivity.EXTRA_SHOW_TOTAL_SCORE, false);
-			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESID, R.xml.qa_nsi);
+			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_nsi);
 			return intent;
 
 		case R.xml.qa_pclm:
 			intent = new Intent(c, SumQAManagerActivity.class);
-			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESID, R.xml.qa_pclm);
+			intent.putExtra(SumQAManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_pclm);
 			return intent;
 
 		case R.xml.qa_phq9:
 			intent = new Intent(c, QAPHQ9ManagerActivity.class);
-			intent.putExtra(QAPHQ9ManagerActivity.EXTRA_XML_RESID, R.xml.qa_phq9);
+			intent.putExtra(QAPHQ9ManagerActivity.EXTRA_XML_RESOURCE, R.xml.qa_phq9);
 			return intent;
 		}
 
@@ -143,7 +110,7 @@ public class ActivityIntents {
 	
 	public static Intent getAboutIntent(Context c) {
 		Intent i = new Intent(c, WebViewActivity.class);
-		i.putExtra(WebViewActivity.EXTRA_TITLE, c.getString(R.string.about_title))
+		i.putExtra(WebViewActivity.EXTRA_TITLE_TEXT, c.getString(R.string.about_title))
 			.putExtra(WebViewActivity.EXTRA_CONTENT, c.getString(R.string.about_content));
 		return i;
 	}

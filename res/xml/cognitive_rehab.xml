@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items title="Cognitive Rehabilitation for Mild TBI Consensus Conference (2009): Summary of Clinical Recommendations">
-
-	<item title="Summary of Clinical Recommendations" >
+	<item title="Summary of Clinical Recommendations">
 		<![CDATA[
 		<ul>
 			<li><strong>Goal: To provide guidance regarding cognitive rehabilitation of chronic post-concussive symptoms in service members and veterans receiving treatment within military medical settings</strong></li>
@@ -32,5 +31,5 @@
 		]]>
 	</item>
 
-	<item id="process" title="Rehabilitation Process" destUri="t2mtbi://workflow/cognitive_rehab_workflow" />
+	<item id="process" title="Rehabilitation Process" uri="t2mtbi://workflow/cognitive_rehab_workflow" />
 </items>

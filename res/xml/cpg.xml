@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items title="VA/DoD CPG" style="separated">
-	<item title="Summary" id="summary" />
-		<item title="Summary of Department of Veterans Affairs/Department of Defense (VA/DoD) Clinical Practice Guideline (CPG) for the Management of Concussion/Mild TBI" parentId="summary">
+	<item title="Summary" id="summary">
+		<item title="Summary of Department of Veterans Affairs/Department of Defense (VA/DoD) Clinical Practice Guideline (CPG) for the Management of Concussion/Mild TBI">
 			<![CDATA[
 				<h2>Scope</h2>
 				<p>This guideline is relevant to all healthcare professionals providing or directing treatment services to patients with mild TBI in any VA or DoD healthcare setting, including both primary and specialty care.</p>
@@ -36,37 +36,40 @@
 				at <a href="http://www.healthquality.va.gov/mtbi/concussion_mtbi_full_1_0.pdf">http://www.healthquality.va.gov/mtbi/concussion_mtbi_full_1_0.pdf</a>.</p>
 			]]>
 		</item>
+	</item>
 
-	<item title="Summary of Algorithms" id="algorithms" />
-		<item title="Algorithm A: Initial Presentation" destUri="t2mtbi://workflow/algorithm_a" parentId="algorithms" />
-		<item title="Algorithm B: Management of Symptoms"  destUri="t2mtbi://workflow/algorithm_b" parentId="algorithms" />
-		<item title="Algorithm C: Follow-up of Persistent Symptoms" destUri="t2mtbi://workflow/algorithm_c" parentId="algorithms" />
+	<item title="Summary of Algorithms" id="algorithms">
+		<item title="Algorithm A: Initial Presentation" uri="t2mtbi://workflow/algorithm_a" parentId="algorithms" />
+		<item title="Algorithm B: Management of Symptoms"  uri="t2mtbi://workflow/algorithm_b" parentId="algorithms" />
+		<item title="Algorithm C: Follow-up of Persistent Symptoms" uri="t2mtbi://workflow/algorithm_c" parentId="algorithms" />
+	</item>
 
-	<item title="Guidance" id="guidance" />
-		<item title="Return to Duty Guidance" parentId="guidance"><![CDATA[
-		<h3>When to Return to Duty/Activity</h3>
-		<ul>
-			<li>Provide period of rest for individuals with post-injury symptoms</li>
-			<li>Encourage gradual return to normal activity as clinically appropriate</li>
-			<li>Suggest exertional testing if a person’s normal activity involves significant physical activity</li>
-			<li>If exertional testing results in a return of symptoms, recommend additional rest until symptoms resolve</li>
-		</ul>
-
-		<h3>When to Apply duty restrictions</h3>
-		<ul>
-			<li>A duty specific task cannot be safely or competently completed based on symptoms</li>
-			<li>The work/duty environment cannot be adapted to the patient’s symptom-based limitation</li>
-			<li>The deficits cannot be accommodated <li>Symptoms reoccur</li>
-		</ul>
+	<item title="Guidance" id="guidance">
+		<item title="Return to Duty Guidance"><![CDATA[
+			<h3>When to Return to Duty/Activity</h3>
+			<ul>
+				<li>Provide period of rest for individuals with post-injury symptoms</li>
+				<li>Encourage gradual return to normal activity as clinically appropriate</li>
+				<li>Suggest exertional testing if a person’s normal activity involves significant physical activity</li>
+				<li>If exertional testing results in a return of symptoms, recommend additional rest until symptoms resolve</li>
+			</ul>
+	
+			<h3>When to Apply duty restrictions</h3>
+			<ul>
+				<li>A duty specific task cannot be safely or competently completed based on symptoms</li>
+				<li>The work/duty environment cannot be adapted to the patient’s symptom-based limitation</li>
+				<li>The deficits cannot be accommodated <li>Symptoms reoccur</li>
+			</ul>
 		]]></item>
 
-		<item title="Referral Guidance" parentId="guidance"><![CDATA[
-		<h3>When to Refer to Specialists</h3>
-		<ul>
-			<li>Symptoms cannot be linked to an event (suspicion of another diagnosis)</li>
-			<li>An atypical symptom pattern or course is present </li>
-			<li>Findings indicate an acute neurological condition requiring urgent intervention</li>
-			<li>Presence of other major comorbid conditions requiring special evaluation</li>
-		</ul>
+		<item title="Referral Guidance"><![CDATA[
+			<h3>When to Refer to Specialists</h3>
+			<ul>
+				<li>Symptoms cannot be linked to an event (suspicion of another diagnosis)</li>
+				<li>An atypical symptom pattern or course is present </li>
+				<li>Findings indicate an acute neurological condition requiring urgent intervention</li>
+				<li>Presence of other major comorbid conditions requiring special evaluation</li>
+			</ul>
 		]]></item>
+	</item>
 </items>

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package org.t2health.mtbi;
+package org.t2health.lib;
 
 public final class R {
     public static final class array {

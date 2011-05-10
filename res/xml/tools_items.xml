@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items title="Clinical Tools and Resources" style="separated">
-	<item title="Assessments" id="assessments" />
-		<item title="DHI - Dizziness Handicap Inventory" parentId="assessments" id="qa_dhi" destUri="t2mtbi://assessment/qa_dhi" />
-		<item title="ESS - Epworth Sleepiness Scale" parentId="assessments" id="qa_ess" destUri="t2mtbi://assessment/qa_ess" />
-		<item title="GCS - Glasgow Coma Scale" parentId="assessments" id="qa_gcs" destUri="t2mtbi://assessment/qa_gcs" />
-		<item title="MAF - Multidimensional Assessment of Fatigue (MAF) Scale" parentId="assessments" id="qa_maf" destUri="t2mtbi://assessment/qa_maf" />
-		<item title="NSI - Neurobehavioral Symptom Inventory" parentId="assessments" id="qa_nsi" destUri="t2mtbi://assessment/qa_nsi" />
-		<item title="PHQ-9 - Patient Health Questionare" parentId="assessments" id="qa_phq9" destUri="t2mtbi://assessment/qa_phq9"/>
-		<item title="PCL-M - PTSD Checklist - Military Version" parentId="assessments" id="qa_pclm" destUri="t2mtbi://assessment/qa_pclm" />
+	<item title="Assessments" id="assessments">
+		<item title="DHI - Dizziness Handicap Inventory" parentId="assessments" id="qa_dhi" uri="t2mtbi://assessment/qa_dhi" />
+		<item title="ESS - Epworth Sleepiness Scale" parentId="assessments" id="qa_ess" uri="t2mtbi://assessment/qa_ess" />
+		<item title="GCS - Glasgow Coma Scale" parentId="assessments" id="qa_gcs" uri="t2mtbi://assessment/qa_gcs" />
+		<item title="MAF - Multidimensional Assessment of Fatigue (MAF) Scale" parentId="assessments" id="qa_maf" uri="t2mtbi://assessment/qa_maf" />
+		<item title="NSI - Neurobehavioral Symptom Inventory" parentId="assessments" id="qa_nsi" uri="t2mtbi://assessment/qa_nsi" />
+		<item title="PHQ-9 - Patient Health Questionare" parentId="assessments" id="qa_phq9" uri="t2mtbi://assessment/qa_phq9"/>
+		<item title="PCL-M - PTSD Checklist - Military Version" parentId="assessments" id="qa_pclm" uri="t2mtbi://assessment/qa_pclm" />
+	</item>
 
-	<item title="Additional Information" id="add_info" />
+	<item title="Additional Information" id="add_info">
 		<item title="Other Tools" parentId="add_info"><![CDATA[
 					<h2>Links to Other Tools (not reproduced in this guide)</h2>
 					<p<strong>Drug Use Questionnaire (DAST-20)</strong><br/>
@@ -148,5 +149,5 @@
 	<ul>
 			]]>
 		</item>
-
+	</item>
 </items>

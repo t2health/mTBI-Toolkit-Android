@@ -38,7 +38,8 @@
 			android:id="@+id/webviewWrapper"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content">
-			<WebView
+			<view
+				class="org.t2health.lib.accessibility.AccessibleWebView"
 				android:id="@+id/text2"
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content" />

@@ -1,18 +1,18 @@
 package org.t2health.mtbi.activity;
 
-import org.t2health.mtbi.view.ToggledButton;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 
 
+import org.t2health.lib.activity.BaseNavigationActivity;
+import org.t2health.lib.widget.PersistantStateButton;
 import org.t2health.mtbi.R;
 
-public class VCodesActivity extends ABSNavigationActivity implements OnClickListener {
-	private ToggledButton[] globalWarButtonList;
-	private ToggledButton[] severityButtons;
+public class VCodesActivity extends BaseNavigationActivity implements OnClickListener {
+	private PersistantStateButton[] globalWarButtonList;
+	private PersistantStateButton[] severityButtons;
 	private int[] globalWarValueList;
 	private int[] severityValueList;
 	private EditText vCodeResultText;
@@ -32,17 +32,17 @@ public class VCodesActivity extends ABSNavigationActivity implements OnClickList
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		this.setTitle(getString(R.string.v_codes_title));
 		this.vCodesArray = this.getResources().getStringArray(R.array.v_codes);
 
 		this.setContentView(R.layout.vcodes_activity);
+		this.setTitle(getString(R.string.v_codes_title));
 
 		this.vCodeResultText = (EditText)this.findViewById(R.id.vcodeResult);
 
-		globalWarButtonList = new ToggledButton[]{
-				(ToggledButton)this.findViewById(R.id.yesButton),
-				(ToggledButton)this.findViewById(R.id.noButton),
-				(ToggledButton)this.findViewById(R.id.unknownButton),
+		globalWarButtonList = new PersistantStateButton[]{
+				(PersistantStateButton)this.findViewById(R.id.yesButton),
+				(PersistantStateButton)this.findViewById(R.id.noButton),
+				(PersistantStateButton)this.findViewById(R.id.unknownButton),
 		};
 		globalWarValueList = new int[] {
 				YES,
@@ -50,12 +50,12 @@ public class VCodesActivity extends ABSNavigationActivity implements OnClickList
 				UNKNOWN,
 		};
 
-		severityButtons = new ToggledButton[] {
-				(ToggledButton)this.findViewById(R.id.severityMildButton),
-				(ToggledButton)this.findViewById(R.id.severityModerateButton),
-				(ToggledButton)this.findViewById(R.id.severityPenetratingButton),
-				(ToggledButton)this.findViewById(R.id.severitySevereButton),
-				(ToggledButton)this.findViewById(R.id.severityUnknownButton),
+		severityButtons = new PersistantStateButton[] {
+				(PersistantStateButton)this.findViewById(R.id.severityMildButton),
+				(PersistantStateButton)this.findViewById(R.id.severityModerateButton),
+				(PersistantStateButton)this.findViewById(R.id.severityPenetratingButton),
+				(PersistantStateButton)this.findViewById(R.id.severitySevereButton),
+				(PersistantStateButton)this.findViewById(R.id.severityUnknownButton),
 		};
 		severityValueList = new int[] {
 				SEV_MILD,
@@ -96,7 +96,7 @@ public class VCodesActivity extends ABSNavigationActivity implements OnClickList
 		return false;
 	}
 
-	private void checkGlobalWarButton(ToggledButton v, boolean checked) {
+	private void checkGlobalWarButton(PersistantStateButton v, boolean checked) {
 		for(int i = 0; i < globalWarButtonList.length; ++i) {
 			globalWarButtonList[i].setChecked(false);
 		}
@@ -106,7 +106,7 @@ public class VCodesActivity extends ABSNavigationActivity implements OnClickList
 		}
 	}
 
-	private void checkSeverityButton(ToggledButton v, boolean checked) {
+	private void checkSeverityButton(PersistantStateButton v, boolean checked) {
 		for(int i = 0; i < severityButtons.length; ++i) {
 			severityButtons[i].setChecked(false);
 		}
@@ -155,13 +155,13 @@ public class VCodesActivity extends ABSNavigationActivity implements OnClickList
 	@Override
 	public void onClick(View arg0) {
 		if(isSeverityButton(arg0)) {
-			ToggledButton tb = (ToggledButton)arg0;
-			checkSeverityButton((ToggledButton)arg0, !tb.isChecked());
+			PersistantStateButton tb = (PersistantStateButton)arg0;
+			checkSeverityButton((PersistantStateButton)arg0, !tb.isChecked());
 			updateVCode();
 
 		} else if(isGlobalWarButton(arg0)) {
-			ToggledButton tb = (ToggledButton)arg0;
-			checkGlobalWarButton((ToggledButton)arg0, !tb.isChecked());
+			PersistantStateButton tb = (PersistantStateButton)arg0;
+			checkGlobalWarButton((PersistantStateButton)arg0, !tb.isChecked());
 			updateVCode();
 		}
 	}

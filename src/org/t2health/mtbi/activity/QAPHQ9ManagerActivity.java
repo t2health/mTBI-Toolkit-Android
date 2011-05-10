@@ -1,6 +1,8 @@
 package org.t2health.mtbi.activity;
 
-import org.t2health.mtbi.activity.qa.SumQAManagerActivity;
+import org.t2health.lib.qa.Question;
+import org.t2health.lib.qa.SumQAManagerActivity;
+
 
 public class QAPHQ9ManagerActivity extends SumQAManagerActivity {
 
