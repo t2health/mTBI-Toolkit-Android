@@ -16,6 +16,7 @@
 	<string name="send_results">Send Results</string>
 	<string name="send_results_subject">Sending results for assessment: {0}</string>
 	<string name="about">About</string>
+	<string name="section_header">Section Header</string>
 
 	<string name="settings">Settings</string>
 	<string name="splash_title">Mild Traumatic Brain Injury Pocket Guide (CONUS)</string>
@@ -98,7 +99,6 @@
     			background-color: rgb(50,50,50);
     		}
     	</style>
-
 		<h3>DoD Definition (2007)</h3>
 		<p>A traumatically induced structural injury and/or physiological disruption of brain function as a result of an external force that is indicated by new onset or worsening of at least one of the following clinical signs immediately following the event:</p>
 		<ul>

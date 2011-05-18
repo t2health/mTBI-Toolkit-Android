@@ -8,4 +8,5 @@
     android:paddingLeft="6dip"
     android:minHeight="50dip"
     android:background="#44000000"
+    android:contentDescription="@string/section_header"
 />

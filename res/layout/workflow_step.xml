@@ -21,9 +21,10 @@
 				android:textAppearance="@android:style/TextAppearance.Medium"
 				android:textColor="#FF000000"
 				android:textStyle="bold"
-				android:inputType="textMultiLine"
+				android:maxLines="2"
 				android:padding="5dip"
-				android:text="Title" />
+				android:text="Title"
+				android:focusable="true" />
 
 			<Button
 				android:id="@+id/detailsButton"

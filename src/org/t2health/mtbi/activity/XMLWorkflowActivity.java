@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import org.t2health.lib.activity.BaseNavigationActivity;
 import org.t2health.lib.activity.WebViewActivity;
@@ -18,6 +20,8 @@ import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +43,7 @@ public class XMLWorkflowActivity extends BaseNavigationActivity {
 	public static final String EXTRA_XML_RESOURCE = "xmlResourceId";
 	public static final String EXTRA_JUMPTO_NEXT = "jumpToNext";
 	public static final String EXTRA_EXPAND_ALL = "expandAll";
-	private ListView listView;
+	//private ListView listView;
 	private int xmlResourceId;
 	private LinkedHashMap<String, WorkflowStep> workflowSteps = new LinkedHashMap<String, WorkflowStep>();
 	private WorkflowStepAdapter adapter;
@@ -49,6 +53,7 @@ public class XMLWorkflowActivity extends BaseNavigationActivity {
 	private boolean expandAll;
 	private LinearLayout contentArea;
 	private ScrollView scrollView;
+	private View focusedView = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,13 +79,6 @@ public class XMLWorkflowActivity extends BaseNavigationActivity {
 		this.currentSteps = new ArrayList<WorkflowStep>();
 		this.adapter = new WorkflowStepAdapter(this, this.currentSteps);
 
-		/*listView = new ListView(this);
-		listView.setScrollingCacheEnabled(false);
-		listView.setCacheColorHint(Color.TRANSPARENT);
-		listView.setAdapter(this.adapter);
-		this.setContentView(listView);*/
-
-
 		// add the steps from the previous orientation shift.
 		if(savedInstanceState != null) {
 			this.expandAll = savedInstanceState.getBoolean(EXTRA_EXPAND_ALL);
@@ -90,7 +88,7 @@ public class XMLWorkflowActivity extends BaseNavigationActivity {
 			String lastId = "";
 			for(int i = 0; i < tmpSteps.size(); ++i) {
 				WorkflowStep step = tmpSteps.get(i);
-Log.v(TAG, "neutral:"+step.neutralButtonActive);
+//Log.v(TAG, "neutral:"+step.neutralButtonActive);
 				workflowSteps.put(step.id, step);
 				addStepToList(lastId, step.id);
 
@@ -222,17 +220,15 @@ Log.v(TAG, "neutral:"+step.neutralButtonActive);
 		newStep.positiveButtonActive = false;
 		newStep.neutralButtonActive = false;
 		this.currentSteps.add(newStep);
+		View stepView = adapter.getView(this.currentSteps.size()-1, null, null);
 		this.contentArea.addView(
-				adapter.getView(this.currentSteps.size()-1, null, null),
+				stepView,
 				new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT)
 		);
-		//this.adapter.notifyDataSetChanged();
-
-		if(this.jumpToNext) {
-			listView.setSelection(this.currentSteps.size()-1);
-		}
+		
+		stepView.requestFocus();
 	}
-
+	
 	private void rollbackToStep(String id, boolean inclusive) {
 		for(int i = this.currentSteps.size()-1; i >= 0; --i) {
 			boolean idsMatch = this.currentSteps.get(i).id.equals(id);
@@ -247,6 +243,30 @@ Log.v(TAG, "neutral:"+step.neutralButtonActive);
 				break;
 			}
 		}
+	}
+	
+	private Handler selectCurrentViewHandler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			if(focusedView != null) {
+				this.post(new Runnable(){
+					@Override
+					public void run() {
+						Log.v(TAG, "FOCUS REQUESTED");
+						focusedView.setFocusable(true);
+						focusedView.requestFocus();
+					}
+				});
+			}
+		}
+	};
+	private void selectCurrentView() {
+		new Timer().schedule(new TimerTask() {
+			@Override
+			public void run() {
+				selectCurrentViewHandler.sendEmptyMessage(0);
+			}
+		}, 1000);
 	}
 
 	private class WorkflowStepAdapter extends ArrayAdapter<WorkflowStep> {
