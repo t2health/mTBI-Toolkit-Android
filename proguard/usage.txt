@@ -1,0 +1,641 @@
+android.preference.TimePickerPreference:
+    private static final java.lang.String VALIDATION_EXPRESSION
+au.com.bytecode.opencsv.CSVParser
+au.com.bytecode.opencsv.CSVReader
+au.com.bytecode.opencsv.CSVWriter
+au.com.bytecode.opencsv.ResultSetHelper
+au.com.bytecode.opencsv.ResultSetHelperService
+com.j256.ormlite.android.AndroidCompiledStatement
+com.j256.ormlite.android.AndroidConnectionSource:
+    private android.database.sqlite.SQLiteOpenHelper helper
+    private com.j256.ormlite.support.DatabaseConnection readOnlyConnection
+    private com.j256.ormlite.support.DatabaseConnection readWriteConnection
+    private com.j256.ormlite.db.DatabaseType databaseType
+    33:35:public AndroidConnectionSource(android.database.sqlite.SQLiteOpenHelper)
+    38:45:public com.j256.ormlite.support.DatabaseConnection getReadOnlyConnection()
+    49:56:public com.j256.ormlite.support.DatabaseConnection getReadWriteConnection()
+    61:61:public void releaseConnection(com.j256.ormlite.support.DatabaseConnection)
+    64:64:public boolean saveSpecialConnection(com.j256.ormlite.support.DatabaseConnection)
+    68:69:public void clearSpecialConnection(com.j256.ormlite.support.DatabaseConnection)
+    76:76:public com.j256.ormlite.db.DatabaseType getDatabaseType()
+com.j256.ormlite.android.AndroidDatabaseConnection
+com.j256.ormlite.android.AndroidDatabaseResults
+com.j256.ormlite.android.AndroidLog:
+    private static final int MAX_TAG_LENGTH
+    private java.lang.String className
+    private static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level
+    17:25:public AndroidLog(java.lang.String)
+    28:28:public boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    32:55:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String)
+    58:81:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+    84:98:private int levelToJavaLevel(com.j256.ormlite.logger.Log$Level)
+    12:12:static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level()
+com.j256.ormlite.android.apptools.ClassNameProvidedOpenHelperFactory
+com.j256.ormlite.android.apptools.OpenHelperManager:
+    49:65:public static com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper(android.content.Context)
+com.j256.ormlite.android.apptools.OpenHelperManager$SqliteOpenHelperFactory:
+    public abstract com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper(android.content.Context)
+com.j256.ormlite.android.apptools.OrmLiteBaseActivity:
+    29:32:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+    39:39:public com.j256.ormlite.support.ConnectionSource getConnectionSource()
+    60:61:protected com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelperInternal(android.content.Context)
+com.j256.ormlite.android.apptools.OrmLiteBaseListActivity:
+    23:26:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+    33:33:public com.j256.ormlite.support.ConnectionSource getConnectionSource()
+    50:51:protected com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelperInternal(android.content.Context)
+    58:62:protected void releaseHelper(com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper)
+com.j256.ormlite.android.apptools.OrmLiteBaseService:
+    private com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper helper
+    23:26:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+    33:33:public com.j256.ormlite.support.ConnectionSource getConnectionSource()
+    38:40:public void onDestroy()
+    47:48:protected com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelperInternal(android.content.Context)
+    55:59:protected void releaseHelper(com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper)
+com.j256.ormlite.android.apptools.OrmLiteBaseTabActivity:
+    23:26:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+    33:33:public com.j256.ormlite.support.ConnectionSource getConnectionSource()
+    50:51:protected com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelperInternal(android.content.Context)
+    58:62:protected void releaseHelper(com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper)
+com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper:
+    28:29:public OrmLiteSqliteOpenHelper(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)
+    public abstract void onCreate(android.database.sqlite.SQLiteDatabase,com.j256.ormlite.support.ConnectionSource)
+    public abstract void onUpgrade(android.database.sqlite.SQLiteDatabase,com.j256.ormlite.support.ConnectionSource,int,int)
+    72:72:public com.j256.ormlite.support.ConnectionSource getConnectionSource()
+    80:104:public final void onCreate(android.database.sqlite.SQLiteDatabase)
+    111:135:public final void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)
+    155:158:public com.j256.ormlite.dao.Dao getDao(java.lang.Class)
+com.j256.ormlite.dao.BaseDaoImpl
+com.j256.ormlite.dao.BaseDaoImpl$1
+com.j256.ormlite.dao.BaseDaoImpl$2
+com.j256.ormlite.dao.BaseForeignCollection
+com.j256.ormlite.dao.CloseableIterable
+com.j256.ormlite.dao.CloseableIterator
+com.j256.ormlite.dao.Dao
+com.j256.ormlite.dao.DaoManager
+com.j256.ormlite.dao.DaoManager$ClazzConnectionSource
+com.j256.ormlite.dao.DaoManager$TableConfigConnectionSource
+com.j256.ormlite.dao.EagerForeignCollection
+com.j256.ormlite.dao.EagerForeignCollection$1
+com.j256.ormlite.dao.ForeignCollection
+com.j256.ormlite.dao.GenericRawResults
+com.j256.ormlite.dao.LazyForeignCollection
+com.j256.ormlite.dao.RawResults
+com.j256.ormlite.dao.RawRowMapper
+com.j256.ormlite.db.BaseDatabaseType
+com.j256.ormlite.db.BaseDatabaseType$BooleanNumberFieldConverter
+com.j256.ormlite.db.BaseSqliteDatabaseType
+com.j256.ormlite.db.DatabaseType
+com.j256.ormlite.db.SqliteAndroidDatabaseType
+com.j256.ormlite.field.DataType
+com.j256.ormlite.field.DataType$1
+com.j256.ormlite.field.DataType$10
+com.j256.ormlite.field.DataType$11
+com.j256.ormlite.field.DataType$12
+com.j256.ormlite.field.DataType$13
+com.j256.ormlite.field.DataType$14
+com.j256.ormlite.field.DataType$15
+com.j256.ormlite.field.DataType$16
+com.j256.ormlite.field.DataType$17
+com.j256.ormlite.field.DataType$18
+com.j256.ormlite.field.DataType$19
+com.j256.ormlite.field.DataType$2
+com.j256.ormlite.field.DataType$20
+com.j256.ormlite.field.DataType$21
+com.j256.ormlite.field.DataType$22
+com.j256.ormlite.field.DataType$23
+com.j256.ormlite.field.DataType$24
+com.j256.ormlite.field.DataType$25
+com.j256.ormlite.field.DataType$26
+com.j256.ormlite.field.DataType$27
+com.j256.ormlite.field.DataType$28
+com.j256.ormlite.field.DataType$29
+com.j256.ormlite.field.DataType$3
+com.j256.ormlite.field.DataType$4
+com.j256.ormlite.field.DataType$5
+com.j256.ormlite.field.DataType$6
+com.j256.ormlite.field.DataType$7
+com.j256.ormlite.field.DataType$8
+com.j256.ormlite.field.DataType$9
+com.j256.ormlite.field.DataType$DateStringFormatConfig
+com.j256.ormlite.field.DatabaseField
+com.j256.ormlite.field.DatabaseFieldConfig
+com.j256.ormlite.field.FieldConverter
+com.j256.ormlite.field.FieldType
+com.j256.ormlite.field.ForeignCollectionField
+com.j256.ormlite.field.SqlType
+com.j256.ormlite.logger.CommonsLoggingLog:
+    private static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level
+    52:66:public boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    71:94:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String)
+    97:120:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+    160:167:private boolean isLevelEnabled(java.lang.reflect.Method)
+    171:178:private void logMessage(java.lang.reflect.Method,java.lang.String)
+    181:188:private void logMessage(java.lang.reflect.Method,java.lang.String,java.lang.Throwable)
+    12:12:static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level()
+com.j256.ormlite.logger.JavaUtilLog
+com.j256.ormlite.logger.LocalLog:
+    public static final java.lang.String LOCAL_LOG_LEVEL_PROPERTY
+    public static final java.lang.String LOCAL_LOG_FILE_PROPERTY
+    65:65:public boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    69:70:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String)
+    73:74:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+    80:81:void flush()
+    84:96:private void printMessage(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+com.j256.ormlite.logger.Log:
+    public abstract boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    public abstract void log(com.j256.ormlite.logger.Log$Level,java.lang.String)
+    public abstract void log(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+com.j256.ormlite.logger.Log$Level:
+    55:55:public boolean isEnabled(com.j256.ormlite.logger.Log$Level)
+com.j256.ormlite.logger.Log4jLog:
+    private static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level
+    42:42:public boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    46:47:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String)
+    50:51:public void log(com.j256.ormlite.logger.Log$Level,java.lang.String,java.lang.Throwable)
+    90:97:private boolean isEnabledFor(java.lang.Object)
+    101:108:private void logMessage(java.lang.Object,java.lang.String)
+    111:118:private void logMessage(java.lang.Object,java.lang.String,java.lang.Throwable)
+    137:151:private java.lang.Object levelToJavaLevel(com.j256.ormlite.logger.Log$Level)
+    11:11:static int[] $SWITCH_TABLE$com$j256$ormlite$logger$Log$Level()
+com.j256.ormlite.logger.Logger:
+    private static final java.lang.String ARG_STRING
+    27:27:public boolean isLevelEnabled(com.j256.ormlite.logger.Log$Level)
+    34:35:public void trace(java.lang.String,java.lang.Object[])
+    41:42:public void trace(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    48:49:public void debug(java.lang.String,java.lang.Object[])
+    55:56:public void debug(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    62:63:public void info(java.lang.String,java.lang.Object[])
+    69:70:public void info(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    76:77:public void warn(java.lang.String,java.lang.Object[])
+    83:84:public void warn(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    90:91:public void error(java.lang.String,java.lang.Object[])
+    97:98:public void error(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    104:105:public void fatal(java.lang.String,java.lang.Object[])
+    111:112:public void fatal(java.lang.Throwable,java.lang.String,java.lang.Object[])
+    115:123:private void log(com.j256.ormlite.logger.Log$Level,java.lang.Throwable,java.lang.String,java.lang.Object[])
+    129:155:private java.lang.String buildFullMessage(java.lang.String,java.lang.Object[])
+com.j256.ormlite.misc.BaseDaoEnabled
+com.j256.ormlite.misc.JavaxPersistence
+com.j256.ormlite.misc.SqlExceptionUtil
+com.j256.ormlite.misc.TransactionManager
+com.j256.ormlite.stmt.DeleteBuilder
+com.j256.ormlite.stmt.GenericRowMapper
+com.j256.ormlite.stmt.PreparedDelete
+com.j256.ormlite.stmt.PreparedQuery
+com.j256.ormlite.stmt.PreparedStmt
+com.j256.ormlite.stmt.PreparedUpdate
+com.j256.ormlite.stmt.QueryBuilder
+com.j256.ormlite.stmt.QueryBuilder$InternalQueryBuilder
+com.j256.ormlite.stmt.QueryBuilder$InternalQueryBuilderWrapper
+com.j256.ormlite.stmt.RawResultsImpl
+com.j256.ormlite.stmt.SelectArg
+com.j256.ormlite.stmt.SelectIterator
+com.j256.ormlite.stmt.StatementBuilder
+com.j256.ormlite.stmt.StatementBuilder$StatementType
+com.j256.ormlite.stmt.StatementExecutor
+com.j256.ormlite.stmt.StatementExecutor$ObjectArrayRowMapper
+com.j256.ormlite.stmt.StatementExecutor$RawResultsWrapper
+com.j256.ormlite.stmt.StatementExecutor$StringArrayRowMapper
+com.j256.ormlite.stmt.StatementExecutor$UserObjectRowMapper
+com.j256.ormlite.stmt.UpdateBuilder
+com.j256.ormlite.stmt.Where
+com.j256.ormlite.stmt.Where$SimpleStack
+com.j256.ormlite.stmt.mapped.BaseMappedQuery
+com.j256.ormlite.stmt.mapped.BaseMappedStatement
+com.j256.ormlite.stmt.mapped.MappedCreate
+com.j256.ormlite.stmt.mapped.MappedCreate$KeyHolder
+com.j256.ormlite.stmt.mapped.MappedDelete
+com.j256.ormlite.stmt.mapped.MappedDeleteCollection
+com.j256.ormlite.stmt.mapped.MappedPreparedStmt
+com.j256.ormlite.stmt.mapped.MappedQueryForId
+com.j256.ormlite.stmt.mapped.MappedRefresh
+com.j256.ormlite.stmt.mapped.MappedUpdate
+com.j256.ormlite.stmt.mapped.MappedUpdateId
+com.j256.ormlite.stmt.query.And
+com.j256.ormlite.stmt.query.BaseBinaryClause
+com.j256.ormlite.stmt.query.BaseComparison
+com.j256.ormlite.stmt.query.Between
+com.j256.ormlite.stmt.query.Clause
+com.j256.ormlite.stmt.query.Comparison
+com.j256.ormlite.stmt.query.Eq
+com.j256.ormlite.stmt.query.Exists
+com.j256.ormlite.stmt.query.Ge
+com.j256.ormlite.stmt.query.Gt
+com.j256.ormlite.stmt.query.In
+com.j256.ormlite.stmt.query.InSubQuery
+com.j256.ormlite.stmt.query.IsNotNull
+com.j256.ormlite.stmt.query.IsNull
+com.j256.ormlite.stmt.query.Le
+com.j256.ormlite.stmt.query.Like
+com.j256.ormlite.stmt.query.Lt
+com.j256.ormlite.stmt.query.Ne
+com.j256.ormlite.stmt.query.NeedsFutureClause
+com.j256.ormlite.stmt.query.Not
+com.j256.ormlite.stmt.query.Or
+com.j256.ormlite.stmt.query.OrderBy
+com.j256.ormlite.stmt.query.Raw
+com.j256.ormlite.stmt.query.SetExpression
+com.j256.ormlite.stmt.query.SetValue
+com.j256.ormlite.support.BaseConnectionSource:
+    18:18:public com.j256.ormlite.support.DatabaseConnection getSpecialConnection()
+    25:32:protected com.j256.ormlite.support.DatabaseConnection getSavedConnection()
+    40:50:protected boolean isSavedConnection(com.j256.ormlite.support.DatabaseConnection)
+    61:77:protected boolean saveSpecial(com.j256.ormlite.support.DatabaseConnection)
+    87:101:protected boolean clearSpecial(com.j256.ormlite.support.DatabaseConnection,com.j256.ormlite.logger.Logger)
+    108:112:protected com.j256.ormlite.support.DatabaseConnection getSpecial()
+com.j256.ormlite.support.BaseConnectionSource$NestedConnection
+com.j256.ormlite.support.CompiledStatement
+com.j256.ormlite.support.ConnectionSource
+com.j256.ormlite.support.DatabaseConnection
+com.j256.ormlite.support.DatabaseResults
+com.j256.ormlite.support.GeneratedKeyHolder
+com.j256.ormlite.table.DatabaseTable
+com.j256.ormlite.table.DatabaseTableConfig
+com.j256.ormlite.table.TableInfo
+com.j256.ormlite.table.TableUtils
+com.nullwire.trace.DefaultExceptionHandler:
+    private static final java.lang.String TAG
+org.achartengine.ChartFactory
+org.achartengine.GraphicalView:
+    143:147:public void setZoomRate(float)
+    214:219:public void repaint(int,int,int,int)
+org.achartengine.GraphicalView$2
+org.achartengine.chart.BarChart
+org.achartengine.chart.BarChart$Type
+org.achartengine.chart.BubbleChart
+org.achartengine.chart.DialChart
+org.achartengine.chart.DoughnutChart
+org.achartengine.chart.LineChart
+org.achartengine.chart.PieChart
+org.achartengine.chart.PointStyle:
+    62:70:public static org.achartengine.chart.PointStyle getPointStyleForName(java.lang.String)
+    79:87:public static int getIndexForName(java.lang.String)
+org.achartengine.chart.RangeBarChart
+org.achartengine.chart.ScatterChart:
+    private static final float SIZE
+    private static final int SHAPE_WIDTH
+    45:47:public ScatterChart(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+org.achartengine.chart.TimeChart
+org.achartengine.chart.XYChart:
+    61:64:public XYChart(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    478:482:public android.graphics.PointF toScreenPoint(android.graphics.PointF)
+org.achartengine.model.CategorySeries
+org.achartengine.model.MultipleCategorySeries
+org.achartengine.model.RangeCategorySeries
+org.achartengine.model.TimeSeries
+org.achartengine.model.XYMultipleSeriesDataset:
+    35:36:public synchronized void addSeries(org.achartengine.model.XYSeries)
+    44:45:public synchronized void removeSeries(int)
+    53:54:public synchronized void removeSeries(org.achartengine.model.XYSeries)
+org.achartengine.model.XYSeries:
+    49:52:public XYSeries(java.lang.String)
+    58:68:private void initRange()
+    77:81:private void updateRange(double,double)
+    98:99:public void setTitle(java.lang.String)
+    108:111:public synchronized void add(double,double)
+    119:124:public synchronized void remove(int)
+    130:133:public synchronized void clear()
+org.achartengine.model.XYValueSeries
+org.achartengine.renderer.DefaultRenderer:
+    public static final int NO_COLOR
+    public static final int BACKGROUND_COLOR
+    public static final int TEXT_COLOR
+    86:87:public void addSeriesRenderer(org.achartengine.renderer.SimpleSeriesRenderer)
+    95:96:public void removeSeriesRenderer(org.achartengine.renderer.SimpleSeriesRenderer)
+    123:123:public org.achartengine.renderer.SimpleSeriesRenderer[] getSeriesRenderers()
+    141:142:public void setBackgroundColor(int)
+    159:160:public void setApplyBackgroundColor(boolean)
+    177:178:public void setAxesColor(int)
+    195:196:public void setLabelsColor(int)
+    213:214:public void setLabelsTextSize(float)
+    231:232:public void setShowAxes(boolean)
+    249:250:public void setShowLabels(boolean)
+    267:268:public void setShowGrid(boolean)
+    285:286:public void setShowLegend(boolean)
+    303:304:public void setFitLegend(boolean)
+    339:340:public void setLegendTextSize(float)
+    349:351:public void setTextTypeface(java.lang.String,int)
+    368:369:public void setAntialiasing(boolean)
+    386:387:public void setXLabelsAlign(android.graphics.Paint$Align)
+    404:405:public void setYLabelsAlign(android.graphics.Paint$Align)
+    413:413:public float getScale()
+    423:424:public void setScale(float)
+    441:442:public void setLegendHeight(int)
+    459:460:public void setMargins(int[])
+org.achartengine.renderer.DialRenderer
+org.achartengine.renderer.DialRenderer$Type
+org.achartengine.renderer.SimpleSeriesRenderer:
+    44:45:public void setColor(int)
+org.achartengine.renderer.XYMultipleSeriesRenderer:
+    128:129:public void setOrientation(org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation)
+    146:147:public void setChartTitle(java.lang.String)
+    164:165:public void setChartTitleTextSize(float)
+    182:183:public void setXTitle(java.lang.String)
+    200:201:public void setYTitle(java.lang.String)
+    218:219:public void setAxisTitleTextSize(float)
+    356:357:public void setXLabels(int)
+    366:367:public void addTextLabel(double,java.lang.String)
+    392:393:public void clearTextLabels()
+    410:411:public void setYLabels(int)
+    428:429:public void setDisplayChartValues(boolean)
+    446:447:public void setChartValuesTextSize(float)
+    474:476:public void setPanEnabled(boolean,boolean)
+    503:505:public void setZoomEnabled(boolean,boolean)
+    522:523:public void setZoomButtonsVisible(boolean)
+    540:541:public void setZoomRate(float)
+    549:549:public double getBarsSpacing()
+    560:561:public void setBarSpacing(double)
+    596:597:public void setGridColor(int)
+    616:617:public void setPanLimits(double[])
+    636:637:public void setZoomLimits(double[])
+    654:655:public void setXLabelsAngle(float)
+    672:673:public void setYLabelsAngle(float)
+    681:681:public float getPointSize()
+    690:691:public void setPointSize(float)
+    722:723:public void setInitialRange(double[])
+org.achartengine.renderer.XYSeriesRenderer:
+    43:43:public boolean isFillBelowLine()
+    53:54:public void setFillBelowLine(boolean)
+    71:72:public void setFillPoints(boolean)
+    80:80:public int getFillBelowLineColor()
+    89:90:public void setFillBelowLineColor(int)
+    107:108:public void setPointStyle(org.achartengine.chart.PointStyle)
+    116:116:public float getLineWidth()
+    125:126:public void setLineWidth(float)
+org.achartengine.util.MathHelper:
+    public static final double NULL_VALUE
+    46:57:public static double[] minmax(java.util.List)
+org.t2health.lib.IntentFactory:
+    28:30:public static android.content.Intent URIIntent(android.net.Uri)
+    42:42:public static android.content.Intent shareIntent(java.lang.String[],java.lang.String,java.lang.String)
+    57:68:public static android.content.Intent shareIntent(java.lang.String[],java.lang.String,java.lang.String,java.util.ArrayList,java.lang.String)
+    122:134:public static boolean isIntentActionAvailable(android.content.Context,java.lang.String)
+org.t2health.lib.ManifestMetaData:
+    private static final java.lang.String ANALYTICS_PROVIDER
+    private static final java.lang.String ANALYTICS_KEY
+    private static final java.lang.String ANALYTICS_ENABLED
+    private static final java.lang.String REMOTE_STACK_TRACK_URL
+    private static final java.lang.String REMOTE_STACK_TRACE_ENABLED
+    private static final java.lang.String DATABSE_NAME
+    private static final java.lang.String DATABASE_VERSION
+    private static final java.lang.String DATABASE_OPEN_HELPER
+    private static final java.lang.String SECURITY_ENABLED
+    private static final java.lang.String DEBUG_MODE
+    115:116:public static float getFloat(android.content.Context,java.lang.String)
+org.t2health.lib.ManifestMetaData$Database:
+    168:168:public static java.lang.String getName(android.content.Context)
+    177:177:public static int getVersion(android.content.Context)
+org.t2health.lib.ManifestMetaData$RemoteStackTrace:
+    262:271:public static boolean isConfigured(android.content.Context)
+org.t2health.lib.R$array
+org.t2health.lib.R$attr
+org.t2health.lib.R$drawable
+org.t2health.lib.R$id
+org.t2health.lib.R$layout
+org.t2health.lib.R$menu
+org.t2health.lib.R$raw
+org.t2health.lib.R$string
+org.t2health.lib.R$style
+org.t2health.lib.R$styleable:
+    public static final int AbsoluteLayout_Layout_layout_x
+    public static final int AbsoluteLayout_Layout_layout_y
+    public static final int TextImageButton_imagePosition
+    public static final int TextImageButton_src
+    public static final int TextImageButton_text
+org.t2health.lib.R$xml
+org.t2health.lib.SharedPref:
+    27:28:public android.content.SharedPreferences getSharedPreferences(android.content.Context)
+    51:52:public static float getFloat(android.content.Context,java.lang.String,float)
+    63:64:public static int getInt(android.content.Context,java.lang.String,int)
+    75:76:public static long getLong(android.content.Context,java.lang.String,long)
+    109:111:public static void putFloat(android.content.Context,java.lang.String,float)
+    120:122:public static void putInt(android.content.Context,java.lang.String,int)
+    131:133:public static void putLong(android.content.Context,java.lang.String,long)
+org.t2health.lib.SharedPref$RemoteStackTrace:
+    163:164:public static void setIsEnabled(android.content.Context,boolean)
+org.t2health.lib.accessibility.Accessibility:
+    private static final java.lang.String SPACE
+    49:109:public static void show(android.widget.Toast)
+org.t2health.lib.accessibility.AccessibleWebView
+org.t2health.lib.accessibility.AccessibleWebView$AccessibleWebViewClient
+org.t2health.lib.accessibility.AccessibleWebView$JSInterface
+org.t2health.lib.accessibility.AccessibleWebView$JSInterfaceHandler
+org.t2health.lib.activity.BaseActivity:
+    96:100:public final synchronized org.t2health.lib.db.DatabaseOpenHelper getHelper()
+    1:1:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+org.t2health.lib.activity.BaseListActivity:
+    78:88:protected final java.lang.String getIntentText(android.content.Intent,java.lang.String)
+    93:97:public final synchronized org.t2health.lib.db.DatabaseOpenHelper getHelper()
+    1:1:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+org.t2health.lib.activity.BaseNavigationActivity:
+    private static final java.lang.String exceptionText
+    public static final java.lang.String EXTRA_TITLE_TEXT
+    public static final java.lang.String EXTRA_TITLE_VISIBILITY
+    public static final java.lang.String EXTRA_RIGHT_BUTTON_TEXT
+    public static final java.lang.String EXTRA_RIGHT_BUTTON_VISIBILITY
+    public static final java.lang.String EXTRA_LEFT_BUTTON_TEXT
+    public static final java.lang.String EXTRA_LEFT_BUTTON_VISIBILITY
+    public static final int RESULT_BACK
+    214:218:public void setNavigationTitleBackgroundColor(int)
+    277:284:protected void setLeftNavigationButtonImageResource(int)
+    291:295:protected void setLeftNavigationButtonEnabled(boolean)
+    330:337:protected void setRightNavigationButtonImageResource(int)
+org.t2health.lib.activity.BaseTabActivity:
+    78:88:protected final java.lang.String getIntentText(android.content.Intent,java.lang.String)
+    93:97:public final synchronized org.t2health.lib.db.DatabaseOpenHelper getHelper()
+    1:1:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+org.t2health.lib.activity.WebViewActivity:
+    public static final java.lang.String EXTRA_CONTENT
+    public static final java.lang.String EXTRA_CONTENT_URL
+    74:135:private void updateContentCahe(java.lang.String,long)
+    139:139:private void setContentCache(java.lang.String,long,java.lang.String)
+org.t2health.lib.activity.WebViewActivity$HTTPCache
+org.t2health.lib.activity.XMLItemsBrowserActivity:
+    public static final java.lang.String EXTRA_XML_RESOURCE
+    public static final java.lang.String EXTRA_START_ID
+    public static final java.lang.String EXTRA_LIST_SEPARATOR_RES_ID
+    public static final java.lang.String EXTRA_LIST_ITEM_RES_ID
+    public static final java.lang.String EXTRA_LIST_SEPARATOR_CLICKABLE
+    private static final java.lang.String STYLE_NORMAL
+    private static final java.lang.String STYLE_SEPARATED
+    private static final java.lang.String BASE_ITEM_ID
+    private static final java.lang.String XML_ITEMS_TAG
+    private static final java.lang.String XML_ITEM_TAG
+    private static final java.lang.String XML_ID_ATTRIBUTE
+    private static final java.lang.String XML_TITLE_ATTRIBUTE
+    private static final java.lang.String XML_STYLE_ATTRIBUTE
+    private static final java.lang.String XML_URI_ATTRIBUTE
+    protected static final java.lang.String LIST_ITEM_TITLE
+    protected static final java.lang.String LIST_ITEM_ID
+    235:235:public int getXMLResource()
+    243:243:public boolean isSeparatorResourceSet()
+    264:264:public boolean isItemResourceSet()
+org.t2health.lib.activity.XMLItemsBrowserActivity$Item:
+    534:533:public XMLItemsBrowserActivity$Item(org.t2health.lib.activity.XMLItemsBrowserActivity,java.lang.String,java.lang.String,java.util.HashMap)
+org.t2health.lib.activity.XMLItemsBrowserActivity$SimpleSeperatorAdapter:
+    public static final java.lang.String IS_SEPERATOR_ITEM_KEY
+    public static final java.lang.String IS_ENABLED_ITEM_KEY
+    590:583:public XMLItemsBrowserActivity$SimpleSeperatorAdapter(org.t2health.lib.activity.XMLItemsBrowserActivity,android.content.Context,java.util.List,int,java.lang.String[],int[])
+    637:643:private boolean isEnabled(java.util.HashMap)
+org.t2health.lib.analytics.Analytics:
+    77:78:public static void setEnabled(boolean)
+    85:85:public static boolean isEnabled()
+    110:110:public static boolean isDebugEnabled()
+    142:145:public static void onEvent(java.lang.String,java.lang.String,java.lang.String)
+    153:156:public static void onEvent(java.lang.String,android.os.Bundle)
+    174:177:public static void onEvent(java.lang.String,java.util.Map)
+org.t2health.lib.analytics.AnalyticsProvider:
+    public abstract void setDebugEnabled(boolean)
+    public abstract void onEvent(java.lang.String,java.lang.String,java.lang.String)
+    public abstract void onEvent(java.lang.String,android.os.Bundle)
+    public abstract void onEvent(java.lang.String,java.util.Map)
+org.t2health.lib.analytics.FlurryProvider:
+    33:33:public void setDebugEnabled(boolean)
+    88:91:public void onEvent(java.lang.String,java.lang.String,java.lang.String)
+    95:102:public void onEvent(java.lang.String,android.os.Bundle)
+    129:148:public void onEvent(java.lang.String,java.util.Map)
+org.t2health.lib.bluetooth.SerialBTDevice
+org.t2health.lib.bluetooth.SerialBTDevice$1
+org.t2health.lib.bluetooth.SerialBTDevice$ConnectThread
+org.t2health.lib.bluetooth.SerialBTDevice$ConnectedThread
+org.t2health.lib.bluetooth.SerialBTDevice$DeviceConnectionListener
+org.t2health.lib.bluetooth.SerialBTDevice$DeviceNotBondedException
+org.t2health.lib.bluetooth.SerialBTDevice$InvalidBluetoothAddressException
+org.t2health.lib.db.DatabaseOpenHelper
+org.t2health.lib.db.ManifestSqliteOpenHelperFactory:
+    35:79:public com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper(android.content.Context)
+org.t2health.lib.media.ListMediaPlayer
+org.t2health.lib.media.ListMediaPlayer$1
+org.t2health.lib.media.ListMediaPlayer$OnCompleteListener
+org.t2health.lib.media.ListMediaPlayer$StopMonitor
+org.t2health.lib.media.RecordService:
+    public static final int NOTIFICATION_ID
+    private static final int ACTION_ON_RECORD
+    private static final int ACTION_ON_STOPPED
+    private static android.content.Intent notificationIntent
+    private static java.lang.String notificationTitle
+    private static java.lang.String notificationDesc
+    private static int notificationIconRes
+    private org.t2health.lib.media.ServiceRecording currentRecording
+    95:96:public void setOnActionListener(org.t2health.lib.media.RecordService$OnActionListener)
+    99:110:public long getDuration()
+    114:117:public org.t2health.lib.media.ServiceRecording getRecording()
+    121:124:public void reset()
+    127:139:public void stopRecording()
+    142:184:public void startRecording(java.io.File)
+    188:188:public boolean isRecording()
+    192:192:public boolean isMarking()
+    196:198:public void startMarking()
+    201:212:public void stopMarking()
+    215:215:public java.util.ArrayList getStartMarkerTimes()
+    219:219:public java.util.ArrayList getStopMarkerTimes()
+    223:223:public static org.t2health.lib.media.RecordService getService()
+    227:261:public void showNotification()
+    270:278:public static void startService(android.content.Context,android.content.Intent,int,java.lang.String,java.lang.String)
+    281:283:public static void stopService(android.content.Context)
+    36:36:static void access$1(org.t2health.lib.media.RecordService,android.media.MediaRecorder)
+    36:36:static android.media.MediaRecorder access$2(org.t2health.lib.media.RecordService)
+    39:39:static org.t2health.lib.util.ElapsedTimer access$3(org.t2health.lib.media.RecordService)
+    37:37:static void access$4(org.t2health.lib.media.RecordService,org.t2health.lib.media.ServiceRecording)
+    37:37:static org.t2health.lib.media.ServiceRecording access$5(org.t2health.lib.media.RecordService)
+    35:35:static void access$6(org.t2health.lib.media.RecordService,boolean)
+    44:44:static android.os.Handler access$7(org.t2health.lib.media.RecordService)
+    21:21:static java.lang.String access$8()
+org.t2health.lib.media.RecordService$2
+org.t2health.lib.media.ServiceRecording
+org.t2health.lib.preference.BasePreferenceNavigationActivity:
+    private static final java.lang.String exceptionText
+    public static final java.lang.String EXTRA_TITLE_TEXT
+    public static final java.lang.String EXTRA_TITLE_VISIBILITY
+    public static final java.lang.String EXTRA_RIGHT_BUTTON_TEXT
+    public static final java.lang.String EXTRA_RIGHT_BUTTON_VISIBILITY
+    public static final java.lang.String EXTRA_LEFT_BUTTON_TEXT
+    public static final java.lang.String EXTRA_LEFT_BUTTON_VISIBILITY
+    public static final int RESULT_BACK
+    201:205:public void setNavigationTitleBackgroundColor(int)
+    264:271:protected void setLeftNavigationButtonImageResource(int)
+    278:282:protected void setLeftNavigationButtonEnabled(boolean)
+    289:296:protected void setRightNavigationButtonText(int)
+    317:324:protected void setRightNavigationButtonImageResource(int)
+    331:335:protected void setRightNavigationButtonEnabled(boolean)
+org.t2health.lib.qa.BaseQAManagerActivity:
+    public static final java.lang.String EXTRA_XML_RESOURCE
+    private static final java.lang.String XML_TAG_QUESTIONARE
+    private static final java.lang.String XML_TAG_TITLE
+    private static final java.lang.String XML_TAG_DESC
+    private static final java.lang.String XML_TAG_CONTENT
+    private static final java.lang.String XML_TAG_QUESTIONS
+    private static final java.lang.String XML_TAG_QUESTION
+    private static final java.lang.String XML_TAG_ANSWERS
+    private static final java.lang.String XML_TAG_ANSWER
+    private static final java.lang.String XML_ATTR_ID
+    private static final java.lang.String XML_ATTR_TITLE
+    private static final java.lang.String XML_ATTR_DESC
+    private static final java.lang.String XML_ATTR_VALUE
+    private static final java.lang.String XML_ATTR_ANSWER_IDS
+    private static final int QUESTION_ACTIVITY
+org.t2health.lib.qa.BaseQAQuestionActivity:
+    public static final java.lang.String EXTRA_QUESTION
+    public static final java.lang.String EXTRA_ANSWERS
+    public static final java.lang.String EXTRA_TOTAL_QUESIONS
+    public static final java.lang.String EXTRA_QUESTION_INDEX
+org.t2health.lib.qa.SimpleQAManagerActivity:
+    public static final java.lang.String EXTRA_SHOW_TOTAL_SCORE
+org.t2health.lib.security.AppSecurityManager:
+    public static final int UNLOCK_ACTIVITY
+    14:17:public static void onActivityResult(int,int,android.content.Intent)
+org.t2health.lib.security.UnlockActivity:
+    private static final int FORGOT_PIN_ACTIVITY
+org.t2health.lib.util.BaseService:
+    20:52:public void onCreate()
+    59:59:protected java.lang.String getAnalyticsActivityEvent()
+    70:80:protected final java.lang.String getIntentText(android.content.Intent,java.lang.String)
+    85:89:public final synchronized org.t2health.lib.db.DatabaseOpenHelper getHelper()
+    1:1:public synchronized com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper getHelper()
+org.t2health.lib.util.ElapsedTimer:
+    17:22:public void start()
+    28:34:public void stop()
+    40:43:public void reset()
+    50:53:public long getElapsedTime()
+org.t2health.lib.util.Eula:
+    private static final java.lang.String PREFERENCE_EULA_ACCEPTED
+    private static final java.lang.String PREFERENCES_EULA
+org.t2health.lib.widget.AbsoluteLayout
+org.t2health.lib.widget.AbsoluteLayout$LayoutParams
+org.t2health.lib.widget.SeparatedListAdapter
+org.t2health.lib.widget.TextImageButton:
+    204:204:public android.graphics.drawable.Drawable getImageDrawable()
+    212:212:public java.lang.CharSequence getText()
+    220:220:public android.widget.ImageView getImageView()
+    228:228:public android.widget.TextView getTextView()
+    245:247:public void setImageResource(int)
+    254:256:public void setImageBitmap(android.graphics.Bitmap)
+    263:265:public void setImageDrawable(android.graphics.drawable.Drawable)
+org.t2health.mtbi.R
+org.t2health.mtbi.R$array
+org.t2health.mtbi.R$attr
+org.t2health.mtbi.R$drawable
+org.t2health.mtbi.R$id
+org.t2health.mtbi.R$layout
+org.t2health.mtbi.R$menu
+org.t2health.mtbi.R$raw
+org.t2health.mtbi.R$string
+org.t2health.mtbi.R$style
+org.t2health.mtbi.R$styleable
+org.t2health.mtbi.R$xml
+org.t2health.mtbi.activity.VCodesActivity:
+    private static final int YES
+    private static final int NO
+    private static final int UNKNOWN
+    private static final int SEV_UNKNOWN
+    private static final int SEV_MILD
+    private static final int SEV_MODERATE
+    private static final int SEV_SEVERE
+    private static final int SEV_PENETRATING
+org.t2health.mtbi.activity.XMLWorkflowActivity:
+    public static final java.lang.String EXTRA_XML_RESOURCE
+    public static final java.lang.String EXTRA_JUMPTO_NEXT
+    public static final java.lang.String EXTRA_EXPAND_ALL
+    264:270:private void selectCurrentView()
+    248:248:static android.os.Handler access$5(org.t2health.mtbi.activity.XMLWorkflowActivity)
+org.t2health.mtbi.activity.XMLWorkflowActivity$2
