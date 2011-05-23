@@ -160,7 +160,9 @@ public class QAMAFSliderQuestionActivity extends BaseQAQuestionActivity implemen
 			event.setEventTime(System.currentTimeMillis());
 
 			AccessibilityManager aManager = (AccessibilityManager)this.getSystemService(Context.ACCESSIBILITY_SERVICE);
-			aManager.sendAccessibilityEvent(event);
+			if(aManager.isEnabled()) {
+				aManager.sendAccessibilityEvent(event);
+			}
 		}
 	}
 
