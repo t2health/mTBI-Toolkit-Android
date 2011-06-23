@@ -45,18 +45,21 @@ public class SplashActivity extends BaseActivity implements OnClickListener {
 	}
 
 	@Override
-	public void onClick(View arg0) {
-		timer.cancel();
-		startNextActivity();
-	}
-	
-	@Override
-	protected void onStop()
-	{
-		// Make sure the timer gets canceled so that the main screen does not
-		// pop up after user has exited.
-		timer.cancel();
+	protected void onStop() {
 		super.onStop();
+		
+		if(timer != null) {
+			timer.cancel();
+			timer = null;
+		}
 	}
 
+	@Override
+	public void onClick(View arg0) {
+		if(timer != null) {
+			timer.cancel();
+			timer = null;
+		}
+		startNextActivity();
+	}
 }
